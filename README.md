@@ -23,7 +23,7 @@ Simply download just the H5P file, upload it to one of the environments and use 
 
 ### Copyright and License Statement
 
-Copyright (c) 2022 [University of Münster](https://www.uni-muenster.de/en/)
+Copyright (c) 2022 [...](...)
 
 a) You are free to use, alter and reproduce the tutorial (H5P content) under the terms of the [CC-BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/legalcode). 
 
