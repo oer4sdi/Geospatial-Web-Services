@@ -26,7 +26,7 @@ This tutorial is mainly designed for students who want to spend about ... minute
 
 This tutorial was developed at the Institute of Geodesy at Bochum University of Applied Sciences in close cooperation with the University of Münster and the University of Bochum. Main author is Fabian Przybylak under the direction of Prof. Dr. Carsten Keßler.
 
-You are free to use, alter and reproduce the tutorial (H5P content) under the terms of the CC-BY-SA 4.0 license. Any code provided with the tutorial can be used under the terms of the MIT license. Please see the [full license terms](https://github.com/...../blob/main/LICENSE.md).
+You are free to use, alter and reproduce the tutorial (H5P content) under the terms of the CC-BY-SA 4.0 license. Any code provided with the tutorial can be used under the terms of the MIT license. Please see the [full license terms](https://github.com/oer4sdi/Geospatial-Web-Services/blob/main/LICENSE.md). 
 
 The OER4SDI project has been recommended by the Digital University NRW and is funded by the Ministry of Culture and Science NRW. 
 
