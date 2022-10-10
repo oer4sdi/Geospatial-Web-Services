@@ -22,7 +22,7 @@ The module is structured as follows
 
 If you are mainly interested in the technical aspects, you can jump directly to chapter 3 where we guide you through the technical exercise. With the help of self-tests you can check if you have understood the essential concepts and technologies.
 
-This tutorial is mainly designed for students who want to spend about ... minutes on improving their skills in integrating Data from Geosaptial Web Services. You should have some basic knowledge of GIS Software and it wouldn't be bad if you already have some experience in using the free open source Software Geoserver.
+This tutorial is mainly designed for students who want to spend about ... minutes on improving their skills in integrating Data from Geospatial Web Services. You should have some basic knowledge of GIS Software and it wouldn't be bad if you already have some experience in using the free open source Software Geoserver.
 
 This tutorial was developed at the Institute of Geodesy at Bochum University of Applied Sciences in close cooperation with the University of Münster and the University of Bochum. Main author is Fabian Przybylak under the direction of Prof. Dr. Carsten Keßler.
 
