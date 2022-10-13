@@ -66,11 +66,14 @@ Quizfragen Modul 2
 Quizfragen Modul 3
 
 
-**Quiz Fragen des Spider MOOCS:** 
+**Quizfragen des Spider MOOCS:** 
 
 * Question 1: What operations does WMS include? (!GetMap!, !GetFeatureInfo!, GetFeature, !GetCapabilities!)
 * Question 2: Which data formates are generally produced by WMS? (KML, !JPEG, PNG, SVG, GIF!, GML)
 * Question 3: Given the following GetMap() request which attribute should be modified so that the map is zoomed in on the city of Dortmund? (Layers, Service, !Bbox!, Request)
+
+**Quizfragen zu OGC Standards**
+* http://learningzone.rspsoc.org.uk/index.php/Learning-Materials/Introduction-to-OGC-Standards/10.1-Final-Quiz
 
 
 
