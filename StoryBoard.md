@@ -6,7 +6,7 @@
 
 In this Open Educational Resource (OER) you will learn which forms of **geospatial web services** exist, how they are structured, how they can be integrated into an open source GIS (QGIS) and connect with a self published GeoServer. 
 
-After you have completed this tutorial, you will know how:
+After you have completed the following Modules, you will know how:
 * (Module 1) Geospatial Web Services are structured 
 * (Module 1) to find and identify usefull Geospatial Web Services
 * (Module 2) to integrate Web Map Services (WMS) in QGIS and visualize Data from it 
@@ -14,7 +14,7 @@ After you have completed this tutorial, you will know how:
 * (Module 3) to publish your own Data as Web Map Service (WMS) through GeoServer 
 
 
-The module is structured as follows
+The modules are structured as follows
 
 1. Overview
 2. Thematic Background 
@@ -35,7 +35,9 @@ The OER4SDI project has been recommended by the Digital University NRW and is fu
 ## 2. Thematic Background
 
 **Module 1:** 
-With the following slides we provide you with some general context and background on Geospatial Web Services. 
+* Short Introduction with some general context and background on Geospatial Web Services (In a few Sentences) 
+* Video (Main Information about Geospatial Web Services)
+* Text Accordeon (Summarizes the given information)
 
 **Module 2:** 
 
