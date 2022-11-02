@@ -4,8 +4,9 @@
          	           	
 ## 1. Overview
 
-In this Open Educational Resource (OER) you will learn which forms of **geospatial web services** exist, how they are structured, how they can be integrated into an open source GIS (QGIS) and connect with a self published GeoServer. After you have completed this tutorial, you will know how:
+In this Open Educational Resource (OER) you will learn which forms of **geospatial web services** exist, how they are structured, how they can be integrated into an open source GIS (QGIS) and connect with a self published GeoServer. 
 
+After you have completed this tutorial, you will know how:
 * (Module 1) Geospatial Web Services are structured 
 * (Module 1) to find and identify usefull Geospatial Web Services
 * (Module 2) to integrate Web Map Services (WMS) in QGIS and visualize Data from it 
@@ -22,7 +23,7 @@ The module is structured as follows
 
 If you are mainly interested in the technical aspects, you can jump directly to chapter 3 where we guide you through the technical exercise. With the help of self-tests you can check if you have understood the essential concepts and technologies.
 
-This tutorial is mainly designed for students who want to spend about ... minutes on improving their skills in integrating Data from Geospatial Web Services. You should have some basic knowledge of GIS Software and it wouldn't be bad if you already have some experience in using the free open source Software Geoserver.
+This tutorial is mainly designed for participants who want to spend about ... minutes on improving their skills in integrating Data from Geospatial Web Services. You should have some basic knowledge of GIS Software and it wouldn't be bad if you already have some experience in using the free open source Software Geoserver.
 
 This tutorial was developed at the Institute of Geodesy at Bochum University of Applied Sciences in close cooperation with the University of Münster and the University of Bochum. Main author is Fabian Przybylak under the direction of Prof. Dr. Carsten Keßler.
 
