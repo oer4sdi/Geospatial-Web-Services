@@ -6,19 +6,19 @@
 
 In this Open Educational Resource (OER) you will learn which forms of **geospatial web services** exist, how they are structured, how they can be integrated into an open source GIS (QGIS) and connect with a self published GeoServer. 
 
-After you have completed the following Modules, you will know how:
-* (Module 1) Geospatial Web Services are structured 
-* (Module 1) to find and identify usefull Geospatial Web Services
-* (Module 2) to integrate Web Map Services (WMS) in QGIS and visualize Data from it 
-* (Module 2) to integrate Web Feature Services (WFS) in QGIS and get Data from it
-* (Module 3) to publish your own Data as Web Map Service (WMS) through GeoServer 
+After you have completed the following Modules, you will know:
+* (Module 1) what Geospatial Web Services and OGC standards are
+* (Module 1) where to find and identify usefull Geospatial Web Services and learn how they are structured
+* (Module 2) how to integrate Web Map Services (WMS) in QGIS and visualize Data from it 
+* (Module 2) how to integrate Web Feature Services (WFS) in QGIS and get Data from it
+* (Module 3) how to publish your own Data as Web Map Service (WMS) through GeoServer 
 
 
 The modules are structured as follows
 
 1. Overview
 2. Thematic Background 
-3. Excercices and Guides
+3. Excercises and Guides
 4. Wrap up 
 
 If you are mainly interested in the technical aspects, you can jump directly to chapter 3 where we guide you through the technical exercise. With the help of self-tests you can check if you have understood the essential concepts and technologies.
@@ -34,16 +34,13 @@ The OER4SDI project has been recommended by the Digital University NRW and is fu
 
 ## 2. Thematic Background
 
-**Module 1:** 
+**Klassischer Aufbau der Module** 
 * Short Introduction with some general context and background on Geospatial Web Services (In a few Sentences) 
 * Video (Main Information about Geospatial Web Services)
 * Text Accordeon (Summarizes the given information)
 
-**Module 2:** 
 
-**Module 3:**
-
-### 2.1 Read and learn...
+### 2.1 Short Introduction
 
 **Module 1:** 
 
@@ -51,16 +48,28 @@ Hier wird erklärt was Geospatial web Services sind (Aufbau, Funktion). Hier wer
 
 In the most simplistic way a Web service may be defined as "a Web accesable program code which performs a task of either processing or serving some data. Although there are many other definitions in the related literature, the one in W3C (2004) seems to be quite complete and refering to also lately popular REST style Web services. It states that " We can identify two major classes of Web services: REST-compliant Web services, in which the primary purpose of the service is to manipulate XML representations of Web resources using a uniform set of "stateless" operations; and arbitrary Web services, in which the service may expose an arbitrary set of operations. (Definition EO4Geo)
 
+Aufbau SpiderToolkit: 
+* lecture on different types of interface standards https://www.igi-global.com/book/geospatial-web-services/46010
+
+
 **Module 2:** 
 Es wird auf die verschiedenen Angebote eingegangen (WMS, WMTS, WFS, etc.) und wie diese sich voneinander unterscheiden
 
 **Module 3:**
 Hier wird darauf eingegangen wie Serversysteme aufgebaut sind und es wird Geoserver als OpenSource Produkt vorgestellt 
 
-### 2.2 Test your knowledge
+## 2.2 Video/Main Informations
 
 **Module 1:** 
-Quizfragen Modul 1
+
+**Module 2:** 
+
+**Module 3:**
+
+### 2.3 Test your knowledge
+
+**Module 1:** 
+* Quiz on different types of interface standards
 
 **Module 2:** 
 Quizfragen Modul 2
@@ -85,17 +94,30 @@ Quizfragen Modul 3
 
 **A) Software components used in this Module:** 
 
-* **QGIS** is a free and open-source cross-platform desktop geographic information system (GIS) application that supports viewing, editing, printing, and analysis of geospatial data. QGIS functions as geographic information system (GIS) software, allowing users to analyze and edit spatial information, in addition to composing and exporting graphical maps. QGIS supports raster, vector and mesh layers. Vector data is stored as either point, line, or polygon features. Multiple formats of raster images are supported, and the software can georeference images.QGIS supports shapefiles, personal geodatabases, dxf, MapInfo, PostGIS, and other industry-standard formats. Web services, including Web Map Service and Web Feature Service, are also supported to allow use of data from external sources. QGIS integrates with other open-source GIS packages, including PostGIS, GRASS GIS, and MapServer. Plugins written in Python or C++ extend QGIS's capabilities. Plugins can geocode using the Google Geocoding API, perform geoprocessing functions similar to those of the standard tools found in ArcGIS, and interface with PostgreSQL/PostGIS, SpatiaLite and MySQL databases. (**Module 2**)
-* **GeoServer** is an open-source server written in Java that allows users to share, process and edit geospatial data. Designed for interoperability, it publishes data from any major spatial data source using open standards. GeoServer has evolved to become an easy method of connecting existing information to virtual globes such as Google Earth and NASA World Wind as well as to web-based maps such as OpenLayers, Leaflet, Google Maps and Bing Maps. GeoServer functions as the reference implementation of the Open Geospatial Consortium Web Feature Service standard, and also implements the Web Map Service, Web Coverage Service and Web Processing Service specifications. (**Module 3**)
-* **Docker** allows us to package all needed software components as Docker Images and execute those images as Docker Containers in the Docker Environment, e.g. on Linux, Windows or Mac. With the docker-compose tool we can define multiple docker images and configure how they communicate with each other. (**Module 3**)
+**Module 1:** 
+
+* Keine besondere Software notwendig 
+
+**Module 2:** 
+
+* **QGIS** is a free and open-source cross-platform desktop geographic information system (GIS) application that supports viewing, editing, printing, and analysis of geospatial data. QGIS functions as geographic information system (GIS) software, allowing users to analyze and edit spatial information, in addition to composing and exporting graphical maps. QGIS supports raster, vector and mesh layers. Vector data is stored as either point, line, or polygon features. Multiple formats of raster images are supported, and the software can georeference images.QGIS supports shapefiles, personal geodatabases, dxf, MapInfo, PostGIS, and other industry-standard formats. Web services, including Web Map Service and Web Feature Service, are also supported to allow use of data from external sources. QGIS integrates with other open-source GIS packages, including PostGIS, GRASS GIS, and MapServer. Plugins written in Python or C++ extend QGIS's capabilities. Plugins can geocode using the Google Geocoding API, perform geoprocessing functions similar to those of the standard tools found in ArcGIS, and interface with PostgreSQL/PostGIS, SpatiaLite and MySQL databases.
+
+**Module 3:**
+
+* **QGIS** is a free and open-source cross-platform desktop geographic information system (GIS) application that supports viewing, editing, printing, and analysis of geospatial data. QGIS functions as geographic information system (GIS) software, allowing users to analyze and edit spatial information, in addition to composing and exporting graphical maps. QGIS supports raster, vector and mesh layers. Vector data is stored as either point, line, or polygon features. Multiple formats of raster images are supported, and the software can georeference images.QGIS supports shapefiles, personal geodatabases, dxf, MapInfo, PostGIS, and other industry-standard formats. Web services, including Web Map Service and Web Feature Service, are also supported to allow use of data from external sources. QGIS integrates with other open-source GIS packages, including PostGIS, GRASS GIS, and MapServer. Plugins written in Python or C++ extend QGIS's capabilities. Plugins can geocode using the Google Geocoding API, perform geoprocessing functions similar to those of the standard tools found in ArcGIS, and interface with PostgreSQL/PostGIS, SpatiaLite and MySQL databases.
+* **GeoServer** is an open-source server written in Java that allows users to share, process and edit geospatial data. Designed for interoperability, it publishes data from any major spatial data source using open standards. GeoServer has evolved to become an easy method of connecting existing information to virtual globes such as Google Earth and NASA World Wind as well as to web-based maps such as OpenLayers, Leaflet, Google Maps and Bing Maps. GeoServer functions as the reference implementation of the Open Geospatial Consortium Web Feature Service standard, and also implements the Web Map Service, Web Coverage Service and Web Processing Service specifications. 
+
 
 **B) Guide for the Software installation and regestration**
 
-You can install **QGIS** via the official website https://qgis.org/de/site/forusers/download.html and follow the guidance which is provided. Please note that QGIS provides not only the latest version, but also a stable version, which is preferable. A Registration is not necessary. (**Module 2**)
+You can install **QGIS** via the official website https://qgis.org/de/site/forusers/download.html and follow the guidance which is provided. Please note that QGIS provides not only the latest version, but also a stable version, which is preferable. A Registration is not necessary. 
 
-To install **Geoserver** you also have to go to the official website https://geoserver.org/ and follow the provided guidance. Again you can choose between the latest and a stable Version. We recommend the stable Version. (**Module 3**)  
+To install **Geoserver** you also have to go to the official website https://geoserver.org/ and follow the provided guidance. Again you can choose between the latest and a stable Version. We recommend the stable Version.   
 
-To Install **Docker** please go to the official web site [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/) and follow the guidance which is provided there to install docker on your local computer (Linux, Windows or Mac). It is recommended to have at least 8GB RAM to support smooth functioning of Docker. (**Module 3**)
+
+**Docker** allows us to package all needed software components as Docker Images and execute those images as Docker Containers in the Docker Environment, e.g. on Linux, Windows or Mac. With the docker-compose tool we can define multiple docker images and configure how they communicate with each other. (**Notwendig?**)
+To Install 
+**Docker** please go to the official web site [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/) and follow the guidance which is provided there to install docker on your local computer (Linux, Windows or Mac). It is recommended to have at least 8GB RAM to support smooth functioning of Docker. (**Notwendig?**)
 
 
 ### 3.1 Identify Web Services needed for the use Case (Module 1)
