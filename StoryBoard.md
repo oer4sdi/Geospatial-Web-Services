@@ -81,7 +81,6 @@ Aufzählung und kurzer Video Guide auf welchen Ebenen Daten zu finden sind. Hier
 * 
 
 **Quiz**
-
 Quizfragen des Spider MOOCS:
 * Question 1: What operations does WMS include? (!GetMap!, !GetFeatureInfo!, GetFeature, !GetCapabilities!)
 * Question 2: Which data formates are generally produced by WMS? (KML, !JPEG, PNG, SVG, GIF!, GML)
@@ -98,7 +97,7 @@ Quizfragen zu OGC Standards:
 * **QGIS** is a free and open-source cross-platform desktop geographic information system (GIS) application that supports viewing, editing, printing, and analysis of geospatial data. QGIS functions as geographic information system (GIS) software, allowing users to analyze and edit spatial information, in addition to composing and exporting graphical maps. QGIS supports raster, vector and mesh layers. Vector data is stored as either point, line, or polygon features. Multiple formats of raster images are supported, and the software can georeference images.QGIS supports shapefiles, personal geodatabases, dxf, MapInfo, PostGIS, and other industry-standard formats. Web services, including Web Map Service and Web Feature Service, are also supported to allow use of data from external sources. QGIS integrates with other open-source GIS packages, including PostGIS, GRASS GIS, and MapServer. Plugins written in Python or C++ extend QGIS's capabilities. Plugins can geocode using the Google Geocoding API, perform geoprocessing functions similar to those of the standard tools found in ArcGIS, and interface with PostgreSQL/PostGIS, SpatiaLite and MySQL databases.
 
 **Guide for the Software installation and regestration**
-You can install **QGIS** via the official website https://qgis.org/de/site/forusers/download.html and follow the guidance which is provided. Please note that QGIS provides not only the latest version, but also a stable version, which is preferable. A Registration is not necessary.
+* You can install **QGIS** via the official website https://qgis.org/de/site/forusers/download.html and follow the guidance which is provided. Please note that QGIS provides not only the latest version, but also a stable version, which is preferable. A Registration is not necessary.
 
 **Excercice/Guide**
 * Hier wird in Qgis gewechselt und es wird grundsätzlich vorgestellt wie Web Services integriert werden können. Anhand der in Kapitel 3.1 identifizierten Services wird ein WMS Service genutzt um einige Datensätze zu visualisieren.
@@ -108,7 +107,7 @@ You can install **QGIS** via the official website https://qgis.org/de/site/forus
 **Quiz**
 * ?
 
-### 3.3 Publish a Web Service with the open source Software GeoServer (Module 3)
+### 3.3 Modul 3: Publish a Web Service with the open source Software GeoServer
 
 **Required software components used in this Module:** 
 * **QGIS** is a free and open-source cross-platform desktop geographic information system (GIS) application that supports viewing, editing, printing, and analysis of geospatial data. QGIS functions as geographic information system (GIS) software, allowing users to analyze and edit spatial information, in addition to composing and exporting graphical maps. QGIS supports raster, vector and mesh layers. Vector data is stored as either point, line, or polygon features. Multiple formats of raster images are supported, and the software can georeference images.QGIS supports shapefiles, personal geodatabases, dxf, MapInfo, PostGIS, and other industry-standard formats. Web services, including Web Map Service and Web Feature Service, are also supported to allow use of data from external sources. QGIS integrates with other open-source GIS packages, including PostGIS, GRASS GIS, and MapServer. Plugins written in Python or C++ extend QGIS's capabilities. Plugins can geocode using the Google Geocoding API, perform geoprocessing functions similar to those of the standard tools found in ArcGIS, and interface with PostgreSQL/PostGIS, SpatiaLite and MySQL databases.
