@@ -100,7 +100,7 @@ Quizfragen zu OGC Standards:
 * You can install **QGIS** via the official website https://qgis.org/de/site/forusers/download.html and follow the guidance which is provided. Please note that QGIS provides not only the latest version, but also a stable version, which is preferable. A Registration is not necessary.
 
 **Excercice/Guide**
-* Hier wird in Qgis gewechselt und es wird grundsätzlich vorgestellt wie Web Services integriert werden können. Anhand der in Kapitel 3.1 identifizierten Services wird ein WMS Service genutzt um einige Datensätze zu visualisieren.
+* Hier wird im Video Guide in Qgis gewechselt und es wird grundsätzlich vorgestellt wie Web Services integriert werden können. Anhand der in Kapitel 3.1 identifizierten Services wird ein WMS Service genutzt um einige Datensätze zu visualisieren.
 * Außerdem wird ein WFS Service in QGIS eingeladen. Es wird gezeigt, dass die Daten nun nicht nur visualisiert werden sondern physisch als bearbeitbare Temporärlyer vorliegen. 
 * Abschließend wird die Aufgabe gestellt einen weiteren Service eines anderen Anbieters einzubinden (WMS, WFS)
 
@@ -126,8 +126,7 @@ Quizfragen zu OGC Standards:
 
 ## 4. Wrap up
 
-Hey! You did a great job! You ... 
-We hope that you now have an idea of how to work with ... 
+Hey! You did a great job! We hope that you now have an idea of how to work with Geospatial Web Services like WMS and WMF Services in your GIS and how to setup your own Web Services through Geoserver.  
 
 
 **Interested In Learning More?**
