@@ -4,7 +4,7 @@
          	           	
 ## 1. Overview
 
-In this Open Educational Resource (OER) you will learn which forms of **geospatial web services** exist, how they are structured, how they can be integrated into an open source GIS (QGIS) and connect with a self published GeoServer. 
+In this Open Educational Resource (OER) you will learn which forms of **Geospatial Web Services** exist, how they are structured, how they can be integrated into an open source GIS (QGIS) and connect with a self published GeoServer. 
 
 After you have completed the following Modules, you will know:
 * (Module 1) what Geospatial Web Services and OGC standards are
@@ -32,11 +32,12 @@ You are free to use, alter and reproduce the tutorial (H5P content) under the te
 The OER4SDI project has been recommended by the Digital University NRW and is funded by the Ministry of Culture and Science NRW. 
 
 
-## 2. Thematic Background
+## 2. Thematic Background and Guides
 
-**Klassischer Aufbau der Module** 
-* Short Introduction with some general context and background on Geospatial Web Services (In a few Sentences) 
-* Video (Main Information about Geospatial Web Services)
+**classical sructure of the thematic background** 
+* Short Introduction with some general context and background (In a few Sentences) 
+* Video (Main Information about the content)
+* Video Guide (in the context of the given content)
 * Text Accordeon (Summarizes the given information)
 
 
@@ -44,7 +45,7 @@ The OER4SDI project has been recommended by the Digital University NRW and is fu
 
 **Module 1:** 
 
-Hier wird erklärt was Geospatial web Services sind (Aufbau, Funktion). Hier werden außerdem Abkürzungen wie OGC etc. erklärt. (Standards) und auf standard Befehle eingegangen wie getCapabilities und getMap
+Hier wird erklärt was Geospatial web Services sind (Aufbau, Funktion). Hier werden außerdem Abkürzungen wie OGC etc. erklärt. (Standards) 
 
 In the most simplistic way a Web service may be defined as "a Web accesable program code which performs a task of either processing or serving some data. Although there are many other definitions in the related literature, the one in W3C (2004) seems to be quite complete and refering to also lately popular REST style Web services. It states that " We can identify two major classes of Web services: REST-compliant Web services, in which the primary purpose of the service is to manipulate XML representations of Web resources using a uniform set of "stateless" operations; and arbitrary Web services, in which the service may expose an arbitrary set of operations. (Definition EO4Geo)
 
@@ -61,19 +62,29 @@ Hier wird darauf eingegangen wie Serversysteme aufgebaut sind und es wird Geoser
 ## 2.2 Video/Main Informations
 
 **Module 1:** 
+* M1V1: Introduction to the topic: Structure, function and standards of Geospatial Web Services 
+* M1V2: Screencast on data acquisition (where to find good geospatial web services) + explain requests (get...)
 
 **Module 2:** 
+* M2V1: Present the functional framework of the different Geospatial Web Services (WMS, WFS, etc.). 
+* M2V2: Screencast on how to integrate Geospatial Web Services into QGIS
 
 **Module 3:**
+* M3V1: Introduction to the functions of server structures around Geospatial Web Services (Geoserver as an example).
+* M3V2: Screencast on publishing a Geospatial Web Service (WMS) via Geoserver
 
-## 3. Excercices, Guides and Quiz
+## 3. Excercices and Quiz
+
+**classical sructure of the Excercices and Quizzes** 
+* Excercise (Mostly oriented to the videoguide)
+* Quiz (checks the understanding of the given information)
 
 ### 3.1 Module 1: Identify Web Services needed for the use Case 
 
 **Required software components used in this Module:** 
 * No special software is required 
 
-**Excercice/Guide**
+**Excercice**
 Aufzählung und kurzer Video Guide auf welchen Ebenen Daten zu finden sind. Hier könnten Anbieter wie Copernicus oder auch GDI.de vorgestellt werden 
 
 * Link zum Geodatenkatalog https://gdk.gdi-de.org/gdi-de/srv/ger/catalog.search#/home Hier sind einige Services aus Deutschland und der INSPIRE Umgebung zu finden und nach Themen filterbar. 
