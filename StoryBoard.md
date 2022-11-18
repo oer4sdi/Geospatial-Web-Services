@@ -31,6 +31,8 @@ You are free to use, alter and reproduce the tutorial (H5P content) under the te
 
 The OER4SDI project has been recommended by the Digital University NRW and is funded by the Ministry of Culture and Science NRW. 
 
+### 1.1 Metadata 
+
 
 ## 2. Thematic Background and Guides
 
@@ -44,14 +46,12 @@ The OER4SDI project has been recommended by the Digital University NRW and is fu
 ### 2.1 Short Introduction
 
 **Module 1:** 
-
-Hier wird erklärt was Geospatial web Services sind (Aufbau, Funktion). Hier werden außerdem Abkürzungen wie OGC etc. erklärt. (Standards) 
+Here is explained what Geospatial web Services are (structure, function). Abbreviations like OGC etc. are also explained here. (standards) 
 
 In the most simplistic way a Web service may be defined as "a Web accesable program code which performs a task of either processing or serving some data. Although there are many other definitions in the related literature, the one in W3C (2004) seems to be quite complete and refering to also lately popular REST style Web services. It states that " We can identify two major classes of Web services: REST-compliant Web services, in which the primary purpose of the service is to manipulate XML representations of Web resources using a uniform set of "stateless" operations; and arbitrary Web services, in which the service may expose an arbitrary set of operations. (Definition EO4Geo)
 
 Aufbau SpiderToolkit: 
 * lecture on different types of interface standards https://www.igi-global.com/book/geospatial-web-services/46010
-
 
 **Module 2:** 
 Es wird auf die verschiedenen Angebote eingegangen (WMS, WMTS, WFS, etc.) und wie diese sich voneinander unterscheiden
