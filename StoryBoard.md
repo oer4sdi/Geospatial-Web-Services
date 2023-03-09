@@ -9,8 +9,8 @@ In this Open Educational Resource (OER) you will learn which forms of **Geospati
 After you have completed the following Modules, you will know:
 * (Module 1) what Geospatial Web Services and OGC standards are
 * (Module 1) where to find and identify usefull Geospatial Web Services and learn how they are structured
-* (Module 2) how to integrate Web Map Services (WMS) in QGIS and visualize Data from it 
-* (Module 2) how to integrate Web Feature Services (WFS) in QGIS and get Data from it
+* (Module 1) how to integrate Web Map Services (WMS) in QGIS and visualize Data from it 
+* (Module 1) how to integrate Web Feature Services (WFS) in QGIS and get Data from it
 * (Module 3) how to publish your own Data as Web Map Service (WMS) through GeoServer 
 
 
@@ -20,8 +20,6 @@ The modules are structured as follows
 2. Thematic Background 
 3. Excercises, Guides and Quiz 
 4. Wrap up 
-
-If you are mainly interested in the technical aspects, you can jump directly to chapter 3 where we guide you through the technical exercise. With the help of self-tests you can check if you have understood the essential concepts and technologies.
 
 This tutorial is mainly designed for participants who want to spend about ... minutes on improving their skills in integrating Data from Geospatial Web Services. You should have some basic knowledge of GIS Software and it wouldn't be bad if you already have some experience in using the free open source Software Geoserver.
 
@@ -48,12 +46,6 @@ The OER4SDI project has been recommended by the Digital University NRW and is fu
 **Module 1:** 
 Here is explained what Geospatial web Services are (structure, function). Abbreviations like OGC etc. are also explained here. (standards) 
 
-In the most simplistic way a Web service may be defined as "a Web accesable program code which performs a task of either processing or serving some data. Although there are many other definitions in the related literature, the one in W3C (2004) seems to be quite complete and refering to also lately popular REST style Web services. It states that " We can identify two major classes of Web services: REST-compliant Web services, in which the primary purpose of the service is to manipulate XML representations of Web resources using a uniform set of "stateless" operations; and arbitrary Web services, in which the service may expose an arbitrary set of operations. (Definition EO4Geo)
-
-Aufbau SpiderToolkit: 
-* lecture on different types of interface standards https://www.igi-global.com/book/geospatial-web-services/46010
-
-**Module 2:** 
 Es wird auf die verschiedenen Angebote eingegangen (WMS, WMTS, WFS, etc.) und wie diese sich voneinander unterscheiden
 
 **Module 3:**
