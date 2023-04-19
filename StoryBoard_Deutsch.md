@@ -77,6 +77,7 @@ Die OGC Web Services-Architektur besteht aus einer Reihe von Komponenten, die zu
 * Service Requester: Dies ist der Client, der den Webdienst anfordert und auf die Antwort vom Service Provider wartet.
 * Service Registry: Dies ist ein Verzeichnis, das Informationen über verfügbare Geodaten-Webdienste enthält, damit Service Requester diese finden und verwenden können.
 * Service Broker: Dies ist ein Vermittler, der die Interoperabilität zwischen verschiedenen Geodaten-Webdiensten ermöglicht, indem er Daten und Anfragen zwischen ihnen übersetzt.
+
 Geospatial Web Services verwenden offene Standards und Protokolle, um den Austausch von Geodaten zwischen verschiedenen Systemen und Plattformen zu erleichtern. Zu den wichtigsten Standards gehören: 
 
 * Web Map Service (WMS) 
@@ -85,6 +86,63 @@ Geospatial Web Services verwenden offene Standards und Protokolle, um den Austau
 * Catalog Service (CSW)
 * Sensor Observation Service (SOS)
 
+**Was ist der Unterschied zwischen den verschiedenen Services?**
+* Ein Web Map Service (WMS) ermöglicht es einem Client, statische Kartenbilder von einem Server abzurufen und anzuzeigen.
+* Ein Web Feature Service (WFS) ermöglicht den Zugriff auf und die Abfrage von vektorbasierten Geodaten.
+* Ein Web Coverage Service (WCS) ermöglicht den Zugriff auf und die Abfrage von räumlichen Rasterdaten wie Satellitenbildern oder Höhenmodellen.
+* Ein Catalog Service (CSW) ermöglicht es einem Client, Metadaten über verfügbare Geodaten und -dienste zu suchen und abzurufen.
+* Ein Sensor Observation Service (SOS) ermöglicht den Zugriff auf Echtzeitdaten von Sensoren, z.B. Umweltsensoren.
+
+**Wie sieht eine typische Web-Anfrage für einen Web map Service aus?**
+Das Web Map Service (WMS) Protokoll ist eine von dem Open Geospatial Consortium (OGC) definierte Schnittstelle, die es ermöglicht, Karten und geografische Daten über das Web abzufragen und zu visualisieren. Das WMS-Protokoll definiert das Format und die Struktur der Daten, die vom Server zurückgegeben werden, sowie die Methoden und Parameter, mit denen die Daten abgefragt werden können.
+
+Das WMS-Protokoll verwendet HTTP oder HTTPS als Transportprotokoll. Eine typische WMS-Anfrage besteht aus einer URL, die verschiedene Parameter enthält, die den Inhalt der Karte bestimmen. Hier ist ein Beispiel einer WMS-Anfrage und der zugehörigen Parameter:
+
+BILD!!
+
+Der Server verarbeitet die Anfrage und sendet die Karte als Antwort im angeforderten Format zurück. Die Karte kann dann im Browser oder in einer Anwendung angezeigt werden.
+
+**Welche weiteren Anfragen können an einen WMS-Server gestellt werden?**
+Ein WMS-Protokoll definiert noch weitere Anfragen, die von einem Client an einen WMS-Server gesendet werden können.
+
+* **GetCapabilities:** Mit dieser Anfrage kann der Client Informationen über die verfügbaren Layer und Funktionen des WMS-Servers abrufen. Die Antwort enthält eine XML-Datei, die die verfügbaren Layer, ihre Eigenschaften und Metadaten sowie die unterstützten Operationen und Formate enthält.
+* **GetMap:** Mit dieser Anfrage kann der Client eine Karte vom Server abrufen. Die Parameter dieser Anfrage umfassen den gewünschten Ausschnitt der Karte, die Größe und das Format der Karte sowie die gewünschten Layer und Stile.
+* **GetFeatureInfo:** Mit dieser Anfrage kann der Client Informationen über die Eigenschaften von Objekten in einem bestimmten Punkt auf der Karte abrufen. Die Antwort enthält eine XML-Datei oder ein anderes Format, das die Attribute und Werte der Objekte enthält.
+* **DescribeLayer:** Mit dieser Anfrage kann der Client Informationen über die Eigenschaften und Metadaten eines bestimmten Layers abrufen. Die Antwort enthält eine XML-Datei oder ein anderes Format, das die Eigenschaften und Metadaten des Layers enthält.
+
+Es gibt auch andere Anfragen wie **GetLegendGraphic** und **GetStyles**, die für bestimmte Anwendungsfälle nützlich sein können.
+
+**Welche weiteren Anfragen können an einen WFS-Server gestellt werden?**
+Ein Web Feature Service (WFS) Server verwendet andere Anfragen als ein Web Map Service (WMS) Server, da der WFS-Standard sich auf den Zugriff und die Abfrage von vektorbasierten Geodaten konzentriert, während der WMS-Standard die Visualisierung von Karten im Fokus hat.
+
+* **GetCapabilities:** Mit dieser Anfrage kann der Client Informationen über die verfügbaren Layer und Funktionen des WFS-Servers abrufen. Die Antwort enthält eine XML-Datei, die die verfügbaren Layer, ihre Eigenschaften und Metadaten sowie die unterstützten Operationen und Formate enthält.
+* **DescribeFeatureType:** Mit dieser Anfrage kann der Client die Struktur eines bestimmten Layers abrufen. Die Antwort enthält eine XML-Datei, die die Eigenschaften und Attribute des Layers definiert.
+* **GetFeature:** Mit dieser Anfrage kann der Client vektorbasierte Geodaten aus einem oder mehreren Layern abrufen. Die Parameter dieser Anfrage umfassen den gewünschten Ausschnitt der Daten, die Attribute und Eigenschaften, die zurückgegeben werden sollen, und die Filterbedingungen, die auf die Daten angewendet werden sollen.
+* **Transaction:** Mit dieser Anfrage kann der Client Änderungen an den Daten auf dem WFS-Server vornehmen. Die Operationen können Insert, Update oder Delete sein, und sie werden in einer XML-Datei definiert, die an den Server gesendet wird.
+
+Es gibt ebenfalls noch andere Anfragen wie **LockFeature**, **GetPropertyValue** und **GetFeatureWithLock**.
+
+**Was ist GeoServer?**
+GeoServer wurde erstmals im Jahr 2001 von der Open Source Geospatial Foundation (OSGeo) ins Leben gerufen. Die Idee hinter GeoServer war, eine Open-Source-Software zu schaffen, die es Benutzern ermöglicht, Geodaten im Web zu verwalten und bereitzustellen.
+
+Die ursprüngliche Version von GeoServer wurde von der australischen Regierungsbehörde Geoscience Australia entwickelt und als Open-Source-Software veröffentlicht. Im Laufe der Jahre wurde GeoServer von einer breiten Community von Entwicklern weiterentwickelt und verbessert, die neue Funktionen hinzufügten und die Leistung und Stabilität der Software verbesserten.
+
+GeoServer hat seit seiner Gründung eine starke Unterstützung von der OSGeo-Community erfahren. Die OSGeo ist eine gemeinnützige Organisation, die sich der Förderung von Open-Source-Geodaten-Software widmet und GeoServer ist eines ihrer wichtigsten Projekte. GeoServer hat auch eine aktive Benutzer-Community und wird von vielen Regierungsbehörden, Unternehmen und gemeinnützigen Organisationen auf der ganzen Welt eingesetzt.
+
+Heute ist GeoServer eine der beliebtesten Open-Source-Softwarelösungen für Geodatenmanagement und -bereitstellung im Web. Es ist bekannt für seine Flexibilität, Skalierbarkeit und Leistung und wird von einer wachsenden Anzahl von Entwicklern und Benutzern weltweit genutzt.
+
+**Welche Funktionen hat GeoServer?**
+GeoServer bietet eine Plattform für die Verwaltung und Veröffentlichung von Geodaten im Web, indem es Daten in verschiedenen Geodatenformaten (wie zum Beispiel Shapefiles, Geotiffs, PostGIS-Datenbanken) verarbeitet und sie als Webdienste (wie zum Beispiel WMS, WFS, WCS) bereitstellt.
+
+Die Funktionen von GeoServer umfassen:
+
+* **Datenmanagement:** GeoServer ermöglicht es Benutzern, Geodaten aus verschiedenen Quellen zu importieren und zu verwalten. Es unterstützt verschiedene Datenformate, einschließlich Vektor- und Rasterdaten, sowie Datenbanken wie PostGIS, Oracle und MySQL.
+* **Datenverarbeitung:** GeoServer kann Daten transformieren und filtern, um sie in verschiedenen Formaten und Projektionen bereitzustellen. Es kann auch Daten aggregieren und Gruppierungen erstellen, um benutzerdefinierte Ansichten bereitzustellen.
+* **Bereitstellung von Webdiensten:** GeoServer bietet eine breite Palette von Webdiensten, einschließlich Web Map Service (WMS), Web Feature Service (WFS) und Web Coverage Service (WCS). Diese Webdienste ermöglichen es Benutzern, Geodaten auf einfache Weise über das Internet zu visualisieren, zu analysieren und herunterzuladen.
+* **Sicherheit:** GeoServer bietet eine robuste Sicherheitsinfrastruktur, die es Benutzern ermöglicht, den Zugriff auf Geodaten zu steuern. Es unterstützt Authentifizierung und Autorisierung, sowie HTTPS-Verschlüsselung für sichere Datenübertragung.
+* **Skalierbarkeit:** GeoServer kann auf einer Vielzahl von Plattformen ausgeführt werden, einschließlich Desktop-Computern, Servern und Cloud-Infrastrukturen. Es ist auch in der Lage, hohe Lasten zu bewältigen und bietet eine hohe Verfügbarkeit und Leistung.
+
+Insgesamt ist GeoServer eine leistungsstarke und vielseitige Plattform für die Verwaltung und Bereitstellung von Geodaten im Web. Die es Benutzern ermöglicht, Geodaten auf einfache Weise zu verwalten und zu teilen, was es zu einem wichtigen Werkzeug für Geodateninfrastrukturen macht.
 
 ## 3. Übungen und Leitfäden
 
