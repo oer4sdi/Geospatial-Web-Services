@@ -2,15 +2,15 @@
          	           	
 ## 1. Überblick
 
-In dieser Open Educational Resource (OER) lernen Sie, welche Formen von **Geospatial Web Services** existieren, wie sie strukturiert sind, wie sie in ein Open Source GIS (QGIS) integriert und über GeoServer veröffentlicht werden können. 
+In dieser Open Educational Resource (OER) lernst du, welche Formen von **Geospatial Web Services** existieren, wie sie strukturiert sind, wie sie in ein Open Source GIS (QGIS) integriert und über GeoServer veröffentlicht werden können. 
 
-**Nachdem Sie die folgende OER abgeschlossen haben, werden Sie wissen:**
+**Nachdem du die folgende OER abgeschlossen hast, wirst du wissen:**
 * was Geospatial Web Services und OGC-Standards sind
 * wo Sie nützliche Geospatial Web Services finden und identifizieren können und wie sie strukturiert sind
 * wie man Web Services in QGIS integriert und mit Daten daraus arbeitet 
 * wie man seine eigenen Web Services mit GeoServer veröffentlicht 
 
-**Die OER ist wie folgt aufgebaut**
+**Das OER ist wie folgt aufgebaut**
 
 1. Überblick
 2. Thematischer Hintergrund 
@@ -18,13 +18,13 @@ In dieser Open Educational Resource (OER) lernen Sie, welche Formen von **Geospa
 4. Quiz 
 5. Nachbereitung 
 
-**Genetische Informationen**
+**Generelle Informationen**
 
-Dieses Tutorial richtet sich hauptsächlich an Teilnehmer, die in etwa ... Minuten ihre Fähigkeiten zur Integration von Daten aus Geospatial Web Services verbessern wollen. Sie sollten einige Grundkenntnisse in GIS-Software haben.
+Dieses Tutorial richtet sich hauptsächlich an Teilnehmer, die in etwa ... Minuten ihre Fähigkeiten zur Integration von Daten aus Geospatial Web Services verbessern wollen. Du solltest bestenfalls einige Grundkenntnisse im Umgang mit GIS-Software besitzen.
 
 Dieses Tutorial wurde am Institut für Geodäsie der Fachhochschule Bochum in enger Zusammenarbeit mit der Universität Münster und der Universität Bochum entwickelt. Hauptautor ist Fabian Przybylak unter der Leitung von Prof. Dr. Carsten Keßler.
 
-Sie dürfen das Tutorial (H5P-Inhalte) unter den Bedingungen der CC-BY-SA 4.0-Lizenz frei verwenden, verändern und vervielfältigen. Jeglicher Code, der mit dem Tutorial zur Verfügung gestellt wird, kann unter den Bedingungen der MIT-Lizenz verwendet werden. Bitte lesen Sie die [vollständigen Lizenzbedingungen] (https://github.com/oer4sdi/Geospatial-Web-Services/blob/main/LICENSE.md). 
+Du darfst das OER (H5P-Inhalte) unter den Bedingungen der CC-BY-SA 4.0-Lizenz frei verwenden, verändern und vervielfältigen. Jeglicher Code, der mit dem OER zur Verfügung gestellt wird, kann unter den Bedingungen der MIT-Lizenz verwendet werden. Bitte lesen Sie die [vollständigen Lizenzbedingungen] (https://github.com/oer4sdi/Geospatial-Web-Services/blob/main/LICENSE.md). 
 
 Das Projekt OER4SDI wurde von der Digitalen Hochschule NRW empfohlen und wird durch das Ministerium für Kultur und Wissenschaft NRW gefördert. 
 
@@ -32,12 +32,21 @@ Das Projekt OER4SDI wurde von der Digitalen Hochschule NRW empfohlen und wird du
 
 **Gliederung des thematischen Hintergrunds** 
 * Kurze Einleitung mit allgemeinem Kontext und Hintergrund (in wenigen Sätzen) 
-* Thematisches Video (Hauptinformationen über den Inhalt; Textakkord (fasst die gegebenen Informationen zusammen)
+* Thematisches Video (Hauptinformationen über den Inhalt; Textakkordion welches die gegebenen Informationen zusammenfasst)
 
 
 ### 2.1 Kurze Einführung
 
-....
+**Worum geht es eigentlich**
+Die rasche Entwicklung von Methoden und Techniken zur Erfassung von Geodaten bietet die Möglichkeit, riesige Mengen von Geodaten zu sammeln. Sie stellt jedoch auch verschiedene Datenorganisationen und Datennutzer vor die Herausforderung, große Mengen von Geodaten zu verwalten, gemeinsam zu nutzen, zu verarbeiten und zu analysieren. Datenorganisationen stehen vor der Herausforderung, neue Lösungen für die Verwaltung, Speicherung und gemeinsame Archivierung dieser riesigen Datenmengen zu finden.
+
+Ein Online-Dienst um geografische Informationen und räumliche Daten über das Internet bereit zu stellen sind Geospatial Web Services. Diese Dienste ermöglichen es Benutzern, geografische Daten effizient zu teilen, zu suchen, zu visualisieren, abzurufen und zu analysieren.
+
+**Welches Problem besteht dabei?**
+Datenverbreitungssysteme müssen sich immer mit einem Heterogenitätsproblem auseinandersetzen. Verschiedene Quellen können die Effektivität des Austauschs und der Verwaltung von Geodaten behindern. Verschiedene Betriebssysteme, Hardware, Software, Datenformate und Schnittstellen sind mit dem Problem der syntaktischen Heterogenität verbunden. Wenn zwei Webdienste die Schnittstellen des jeweils anderen nicht kennen, können sie keine Nachrichten und Daten austauschen.
+
+**Welche Lösung gibt es dafür?**
+Aus diesem Grund sind Geospatial Web Services in der Regel nach den vom Open Geospatial Consortium entwickelten OGC-Standards organisiert. Diese Standards ermöglichen, dass die Services interoperabel sind und von verschiedenen Anwendungen und Plattformen übergreifend verwendet werden können.
 
 ### 2.2 Thematisches Video (Hauptinformationen)
 
