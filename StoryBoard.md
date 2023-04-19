@@ -18,6 +18,8 @@ In this Open Educational Resource (OER) you will learn which forms of **Geospati
 4. Quiz 
 5. Wrap up 
 
+**Genereal Informations**
+
 This tutorial is mainly designed for participants who want to spend about ... minutes on improving their skills in integrating Data from Geospatial Web Services. You should have some basic knowledge of GIS Software.
 
 This tutorial was developed at the Institute of Geodesy at Bochum University of Applied Sciences in close cooperation with the University of Münster and the University of Bochum. Main author is Fabian Przybylak under the direction of Prof. Dr. Carsten Keßler.
@@ -30,8 +32,7 @@ The OER4SDI project has been recommended by the Digital University NRW and is fu
 
 **Structure of the thematic background** 
 * Short Introduction with some general context and background (In a few Sentences) 
-* Thematic Video (Main Information about the content)
-* Text Accordeon (Summarizes the given information)
+* Thematic Video (Main Information about the content; Text Accordeon (Summarizes the given information)
 
 
 ### 2.1 Short Introduction
