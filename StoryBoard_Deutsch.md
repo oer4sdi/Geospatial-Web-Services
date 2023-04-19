@@ -73,25 +73,25 @@ Die Mitgliedschaft im OGC steht Organisationen und Einzelpersonen aus der Geodat
 **Wie sehen die OGC-Architekturelemente und die wichtigsten OGC-Standards aus?**
 Die OGC Web Services-Architektur besteht aus einer Reihe von Komponenten, die zusammenarbeiten, um die verschiedenen Arten von Geodaten-Webdiensten bereitzustellen. Die wichtigsten Komponenten sind:
 
-* Service Provider: Dies ist der Server, der den Webdienst bereitstellt und auf Anfragen von Clients antwortet.
-* Service Requester: Dies ist der Client, der den Webdienst anfordert und auf die Antwort vom Service Provider wartet.
-* Service Registry: Dies ist ein Verzeichnis, das Informationen über verfügbare Geodaten-Webdienste enthält, damit Service Requester diese finden und verwenden können.
-* Service Broker: Dies ist ein Vermittler, der die Interoperabilität zwischen verschiedenen Geodaten-Webdiensten ermöglicht, indem er Daten und Anfragen zwischen ihnen übersetzt.
+* **Service Provider:** Dies ist der Server, der den Webdienst bereitstellt und auf Anfragen von Clients antwortet.
+* **Service Requester:** Dies ist der Client, der den Webdienst anfordert und auf die Antwort vom Service Provider wartet.
+* **Service Registry:** Dies ist ein Verzeichnis, das Informationen über verfügbare Geodaten-Webdienste enthält, damit Service Requester diese finden und verwenden können.
+* **Service Broker:** Dies ist ein Vermittler, der die Interoperabilität zwischen verschiedenen Geodaten-Webdiensten ermöglicht, indem er Daten und Anfragen zwischen ihnen übersetzt.
 
 Geospatial Web Services verwenden offene Standards und Protokolle, um den Austausch von Geodaten zwischen verschiedenen Systemen und Plattformen zu erleichtern. Zu den wichtigsten Standards gehören: 
 
-* Web Map Service (WMS) 
-* Web Feature Service (WFS)
-* Web Coverage Service (WCS)
-* Catalog Service (CSW)
-* Sensor Observation Service (SOS)
+* Web Map Service (**WMS**) 
+* Web Feature Service (**WFS**)
+* Web Coverage Service (**WCS**)
+* Catalog Service (**CSW**)
+* Sensor Observation Service (**SOS**)
 
 **Was ist der Unterschied zwischen den verschiedenen Services?**
-* Ein Web Map Service (WMS) ermöglicht es einem Client, statische Kartenbilder von einem Server abzurufen und anzuzeigen.
-* Ein Web Feature Service (WFS) ermöglicht den Zugriff auf und die Abfrage von vektorbasierten Geodaten.
-* Ein Web Coverage Service (WCS) ermöglicht den Zugriff auf und die Abfrage von räumlichen Rasterdaten wie Satellitenbildern oder Höhenmodellen.
-* Ein Catalog Service (CSW) ermöglicht es einem Client, Metadaten über verfügbare Geodaten und -dienste zu suchen und abzurufen.
-* Ein Sensor Observation Service (SOS) ermöglicht den Zugriff auf Echtzeitdaten von Sensoren, z.B. Umweltsensoren.
+* Ein Web Map Service (**WMS**) ermöglicht es einem Client, statische Kartenbilder von einem Server abzurufen und anzuzeigen.
+* Ein Web Feature Service (**WFS**) ermöglicht den Zugriff auf und die Abfrage von vektorbasierten Geodaten.
+* Ein Web Coverage Service (**WCS**) ermöglicht den Zugriff auf und die Abfrage von räumlichen Rasterdaten wie Satellitenbildern oder Höhenmodellen.
+* Ein Catalog Service (**CSW**) ermöglicht es einem Client, Metadaten über verfügbare Geodaten und -dienste zu suchen und abzurufen.
+* Ein Sensor Observation Service (**SOS**) ermöglicht den Zugriff auf Echtzeitdaten von Sensoren, z.B. Umweltsensoren.
 
 **Wie sieht eine typische Web-Anfrage für einen Web map Service aus?**
 Das Web Map Service (WMS) Protokoll ist eine von dem Open Geospatial Consortium (OGC) definierte Schnittstelle, die es ermöglicht, Karten und geografische Daten über das Web abzufragen und zu visualisieren. Das WMS-Protokoll definiert das Format und die Struktur der Daten, die vom Server zurückgegeben werden, sowie die Methoden und Parameter, mit denen die Daten abgefragt werden können.
