@@ -38,9 +38,9 @@ The OER4SDI project has been recommended by the Digital University NRW and is fu
 
 ....
 
-## 2.2 Thematic Video (Main Informations)
+### 2.2 Thematic Video (Main Informations)
 
-
+...
 
 ## 3. Excercices and Guides
 
