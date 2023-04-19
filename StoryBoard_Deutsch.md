@@ -50,7 +50,41 @@ Aus diesem Grund sind Geospatial Web Services in der Regel nach den vom Open Geo
 
 ### 2.2 Thematisches Video (Hauptinformationen)
 
-...
+**Was sind Geospatial Webdienste?**
+Geospatial Web Services sind eine Art von Webdiensten, die es ermöglichen, Geodaten und -dienste im Internet bereitzustellen, abzurufen und zu verarbeiten. Diese Dienste werden in der Regel von Geodaten- oder GIS-Organisationen, Regierungsbehörden, Unternehmen und anderen Einrichtungen bereitgestellt, die Geodaten verwalten.
+
+**Wofür braucht man Geospatial Web Services?**
+Durch die Verwendung von Geospatial Web Services können Benutzer auf Geodaten von verschiedenen Quellen zugreifen, umfassende Analysen durchführen und maßgeschneiderte Anwendungen und Visualisierungen erstellen.
+
+**Wie sind GWS aufgebaut und gibt es vorherrschende Standards?**
+Geospatial Web Services sind strukturiert, um geografische Daten und Funktionalitäten über das Web bereitzustellen. Sie basieren in der Regel auf einer Client-Server-Architektur, bei der der Client (in der Regel ein Webbrowser) eine Anfrage an den Server stellt und dieser daraufhin geografische Daten und Funktionalitäten zurückliefert.
+
+Geospatial Web Services verwenden in der Regel eine oder mehrere standardisierte Schnittstellen, die von dem Open Geospatial Consortium (OGC) spezifiziert wurden. Die OGC-Schnittstellen definieren das Format und die Struktur der Daten, die vom Server zurückgegeben werden, sowie die Methoden und Parameter, mit denen die Daten abgefragt werden können.
+
+**Was ist das OGC Consortium?**
+Das OGC Consortium oder auch Open Geospatial Consortium ist eine gemeinnützige Organisation, die sich auf die Entwicklung von Standards für Geodaten und Geodienste konzentriert. Die Organisation wurde im Jahr 1994 gegründet und hat ihren Hauptsitz in den USA.
+
+Das Ziel des OGC ist es, offene Standards für Geodaten und -dienste zu entwickeln und zu fördern, um die Interoperabilität und den Austausch von Geodaten und -diensten zwischen verschiedenen Systemen, Anwendungen und Organisationen zu erleichtern. Die OGC-Standards umfassen Protokolle für den Zugriff auf Geodaten (z.B. WMS, WFS, WCS), Datenmodellierung, Geoprocessing, Metadaten, Katalogisierung und vieles mehr.
+
+Das OGC Consortium arbeitet eng mit anderen Standardisierungsorganisationen und Regierungsbehörden weltweit zusammen, um sicherzustellen, dass die Standards für Geodaten und -dienste in verschiedenen Anwendungsbereichen und in verschiedenen Ländern harmonisiert sind.
+
+Die Mitgliedschaft im OGC steht Organisationen und Einzelpersonen aus der Geodaten- und Geodienstbranche offen und bietet ihnen die Möglichkeit, an der Entwicklung von Standards teilzunehmen und von der Zusammenarbeit mit anderen Fachleuten zu profitieren.
+
+**Wie sehen die OGC-Architekturelemente und die wichtigsten OGC-Standards aus?**
+Die OGC Web Services-Architektur besteht aus einer Reihe von Komponenten, die zusammenarbeiten, um die verschiedenen Arten von Geodaten-Webdiensten bereitzustellen. Die wichtigsten Komponenten sind:
+
+* Service Provider: Dies ist der Server, der den Webdienst bereitstellt und auf Anfragen von Clients antwortet.
+* Service Requester: Dies ist der Client, der den Webdienst anfordert und auf die Antwort vom Service Provider wartet.
+* Service Registry: Dies ist ein Verzeichnis, das Informationen über verfügbare Geodaten-Webdienste enthält, damit Service Requester diese finden und verwenden können.
+* Service Broker: Dies ist ein Vermittler, der die Interoperabilität zwischen verschiedenen Geodaten-Webdiensten ermöglicht, indem er Daten und Anfragen zwischen ihnen übersetzt.
+Geospatial Web Services verwenden offene Standards und Protokolle, um den Austausch von Geodaten zwischen verschiedenen Systemen und Plattformen zu erleichtern. Zu den wichtigsten Standards gehören: 
+
+* Web Map Service (WMS) 
+* Web Feature Service (WFS)
+* Web Coverage Service (WCS)
+* Catalog Service (CSW)
+* Sensor Observation Service (SOS)
+
 
 ## 3. Übungen und Leitfäden
 
