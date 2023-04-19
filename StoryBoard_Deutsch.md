@@ -16,7 +16,7 @@ In dieser Open Educational Resource (OER) lernst du, welche Formen von **Geospat
 2. Thematischer Hintergrund 
 3. Übungen und Leitfäden
 4. Quiz 
-5. Nachbereitung 
+5. Zusammenfassung 
 
 **Generelle Informationen**
 
@@ -174,7 +174,7 @@ Insgesamt ist GeoServer eine leistungsstarke und vielseitige Plattform für die 
 ## 5. Quiz
 
 
-## 5. Auspacken
+## 5. Zusammenfassung
 
 Hey! Das hast du gut gemacht! Wir hoffen, dass Sie nun eine Vorstellung davon haben, wie Sie mit Geospatial Web Services wie WMS und WMF Services in Ihrem GIS arbeiten und wie Sie Ihre eigenen Web Services über Geoserver einrichten können.  
 
