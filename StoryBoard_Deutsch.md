@@ -37,7 +37,7 @@ Das Projekt OER4SDI wurde von der Digitalen Hochschule NRW empfohlen und wird du
 
 ### 2.1 Kurze Einführung
 
-**Worum geht es eigentlich**
+**Worum geht es eigentlich?**
 Die rasche Entwicklung von Methoden und Techniken zur Erfassung von Geodaten bietet die Möglichkeit, riesige Mengen von Geodaten zu sammeln. Sie stellt jedoch auch verschiedene Datenorganisationen und Datennutzer vor die Herausforderung, große Mengen von Geodaten zu verwalten, gemeinsam zu nutzen, zu verarbeiten und zu analysieren. Datenorganisationen stehen vor der Herausforderung, neue Lösungen für die Verwaltung, Speicherung und gemeinsame Archivierung dieser riesigen Datenmengen zu finden.
 
 Ein Online-Dienst um geografische Informationen und räumliche Daten über das Internet bereit zu stellen sind Geospatial Web Services. Diese Dienste ermöglichen es Benutzern, geografische Daten effizient zu teilen, zu suchen, zu visualisieren, abzurufen und zu analysieren.
