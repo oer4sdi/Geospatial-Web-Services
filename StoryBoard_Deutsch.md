@@ -1,96 +1,96 @@
-# OER on Geospatial Web Services (work in progress!)       
+# OER zu Geospatial Web Services (in Arbeit!)       
          	           	
-## 1. Overview
+## 1. Überblick
 
-In this Open Educational Resource (OER) you will learn which forms of **Geospatial Web Services** exist, how they are structured, how they can be integrated into an open source GIS (QGIS) and published through GeoServer. 
+In dieser Open Educational Resource (OER) lernen Sie, welche Formen von **Geospatial Web Services** existieren, wie sie strukturiert sind, wie sie in ein Open Source GIS (QGIS) integriert und über GeoServer veröffentlicht werden können. 
 
-**After you have completed the following OER, you will know:**
-* what Geospatial Web Services and OGC standards are
-* where to find and identify usefull Geospatial Web Services and learn how they are structured
-* how to integrate Web Services in QGIS and work with Data from it 
-* how to publish your own Web Services with GeoServer 
+**Nachdem Sie die folgende OER abgeschlossen haben, werden Sie wissen:**
+* was Geospatial Web Services und OGC-Standards sind
+* wo Sie nützliche Geospatial Web Services finden und identifizieren können und wie sie strukturiert sind
+* wie man Web Services in QGIS integriert und mit Daten daraus arbeitet 
+* wie man seine eigenen Web Services mit GeoServer veröffentlicht 
 
-**The OER is structured as follows**
+**Die OER ist wie folgt aufgebaut**
 
-1. Overview
-2. Thematic Background 
-3. Excercises and Guides
+1. Überblick
+2. Thematischer Hintergrund 
+3. Übungen und Leitfäden
 4. Quiz 
-5. Wrap up 
+5. Nachbereitung 
 
-**Genereal Informations**
+**Genetische Informationen**
 
-This tutorial is mainly designed for participants who want to spend about ... minutes on improving their skills in integrating Data from Geospatial Web Services. You should have some basic knowledge of GIS Software.
+Dieses Tutorial richtet sich hauptsächlich an Teilnehmer, die in etwa ... Minuten ihre Fähigkeiten zur Integration von Daten aus Geospatial Web Services verbessern wollen. Sie sollten einige Grundkenntnisse in GIS-Software haben.
 
-This tutorial was developed at the Institute of Geodesy at Bochum University of Applied Sciences in close cooperation with the University of Münster and the University of Bochum. Main author is Fabian Przybylak under the direction of Prof. Dr. Carsten Keßler.
+Dieses Tutorial wurde am Institut für Geodäsie der Fachhochschule Bochum in enger Zusammenarbeit mit der Universität Münster und der Universität Bochum entwickelt. Hauptautor ist Fabian Przybylak unter der Leitung von Prof. Dr. Carsten Keßler.
 
-You are free to use, alter and reproduce the tutorial (H5P content) under the terms of the CC-BY-SA 4.0 license. Any code provided with the tutorial can be used under the terms of the MIT license. Please see the [full license terms](https://github.com/oer4sdi/Geospatial-Web-Services/blob/main/LICENSE.md). 
+Sie dürfen das Tutorial (H5P-Inhalte) unter den Bedingungen der CC-BY-SA 4.0-Lizenz frei verwenden, verändern und vervielfältigen. Jeglicher Code, der mit dem Tutorial zur Verfügung gestellt wird, kann unter den Bedingungen der MIT-Lizenz verwendet werden. Bitte lesen Sie die [vollständigen Lizenzbedingungen] (https://github.com/oer4sdi/Geospatial-Web-Services/blob/main/LICENSE.md). 
 
-The OER4SDI project has been recommended by the Digital University NRW and is funded by the Ministry of Culture and Science NRW. 
+Das Projekt OER4SDI wurde von der Digitalen Hochschule NRW empfohlen und wird durch das Ministerium für Kultur und Wissenschaft NRW gefördert. 
 
-## 2. Thematic Background
+## 2. Thematischer Hintergrund
 
-**Structure of the thematic background** 
-* Short Introduction with some general context and background (In a few Sentences) 
-* Thematic Video (Main Information about the content; Text Accordeon (Summarizes the given information)
+**Gliederung des thematischen Hintergrunds** 
+* Kurze Einleitung mit allgemeinem Kontext und Hintergrund (in wenigen Sätzen) 
+* Thematisches Video (Hauptinformationen über den Inhalt; Textakkord (fasst die gegebenen Informationen zusammen)
 
 
-### 2.1 Short Introduction
+### 2.1 Kurze Einführung
 
 ....
 
-### 2.2 Thematic Video (Main Informations)
+### 2.2 Thematisches Video (Hauptinformationen)
 
 ...
 
-## 3. Excercices and Guides
+## 3. Übungen und Leitfäden
 
-**Structure of the Excercices and Guides** 
-* Excercise 
+**Aufbau der Übungen und Leitfäden** 
+* Übung 
 * Videoguide (Screencast)
 
-### 3.1 Excercise 1
+### 3.1 Übung 1
 
-**Required software components used in this Excercise:** 
+**Benötigte Softwarekomponenten, die in dieser Übung verwendet werden:** 
 
-* **QGIS** is a free and open-source cross-platform desktop geographic information system (GIS) application that supports viewing, editing, printing, and analysis of geospatial data. 
-(You can install **QGIS** via the official website https://qgis.org/de/site/forusers/download.html and follow the guidance which is provided)
+**QGIS** ist eine freie und quelloffene, plattformübergreifende Desktop-Anwendung für geografische Informationssysteme (GIS), die das Anzeigen, Bearbeiten, Drucken und Analysieren von Geodaten unterstützt. 
+(Sie können **QGIS** über die offizielle Website https://qgis.org/de/site/forusers/download.html installieren und der dortigen Anleitung folgen)
 
-**Excercise**
+**Übung**
 
 
 
-### 3.2 Excercise 2
-**Required software components used in this Excercise:** 
+### 3.2 Übung 2
+**Benötigte Softwarekomponenten, die in dieser Übung verwendet werden:** 
 
-* **QGIS** is a free and open-source cross-platform desktop geographic information system (GIS) application that supports viewing, editing, printing, and analysis of geospatial data.
+**QGIS** ist eine freie und quelloffene, plattformübergreifende Desktop-Anwendung für geografische Informationssysteme (GIS), die das Anzeigen, Bearbeiten, Drucken und Analysieren von Geodaten unterstützt.
 
-* **GeoServer** is an open-source server written in Java that allows users to share, process and edit geospatial data.
+**GeoServer** ist ein in Java geschriebener Open-Source-Server, der es Benutzern ermöglicht, Geodaten gemeinsam zu nutzen, zu verarbeiten und zu bearbeiten.
 
-**Excercise**
+**Übung**
 
 
 ## 5. Quiz
 
 
-## 5. Wrap up
+## 5. Auspacken
 
-Hey! You did a great job! We hope that you now have an idea of how to work with Geospatial Web Services like WMS and WMF Services in your GIS and how to setup your own Web Services through Geoserver.  
-
-
-**Interested In Learning More?**
-
-On the Internet you will find a wealth of resources on Geospatial Web Services. Here are some recommendations: 
-
-* Zhao, P., & Di, L. (Eds.). (2010). Geospatial web services: Advances in information interoperability: Advances in information interoperability. IGI Global. https://www.igi-global.com/book/geospatial-web-services/46010 
-* Kralidis, A. T. (2007). Geospatial web services: The evolution of geospatial data infrastructure. In The Geospatial Web (pp. 223-228). Springer, London. https://link.springer.com/chapter/10.1007/978-1-84628-827-2_22 
-* van den Brink, L., Barnaghi, P., Tandy, J., Atemezing, G., Atkinson, R., Cochrane, B., ... & Janowicz, K. (2019). Best practices for publishing, retrieving, and using spatial data on the web. Semantic Web, 10(1), 95-114. https://content.iospress.com/articles/semantic-web/sw305
-* Clabby, J. (2003). Web services explained: Solutions and applications for the real world. Prentice Hall Professional. https://books.google.be/books?hl=nl&lr=&id=AKkFqV9-_9AC&oi=fnd&pg=PR13&dq=%22fundamentals+of+web+services%22&ots=PL1iLMeHGW&sig=H9XAty66RX8LFIKAo9-VmOOEZDA#v=onepage&q=%22fundamentals%20of%20web%20services%22&f=false
-* Link to a page or lecture describing OGC WMS with an easy language: https://www.ogc.org/standards/wms/introduction 
-* Link to a page or lecture describing OGC WFS with an easy language: http://opengeospatial.github.io/e-learning/wfs/text/basic-main.html
-* Link to geospatial web services: https://gis4schools.readthedocs.io/en/latest/part2/2_1.html
+Hey! Das hast du gut gemacht! Wir hoffen, dass Sie nun eine Vorstellung davon haben, wie Sie mit Geospatial Web Services wie WMS und WMF Services in Ihrem GIS arbeiten und wie Sie Ihre eigenen Web Services über Geoserver einrichten können.  
 
 
-**Your feedback is welcome!**
+**Interessiert daran, mehr zu lernen?**
 
-If you have identified shortcomings in this OER module or have ideas for improving the OER material, you are invited to add entries to the issue list in the [Github repository of this OER]( https://github.com/oer4sdi/...).
+Im Internet finden Sie eine Fülle von Ressourcen zu Geospatial Web Services. Hier sind einige Empfehlungen: 
+
+* Zhao, P., & Di, L. (Eds.). (2010). Geospatial Web Services: Advances in information interoperability: Fortschritte bei der Interoperabilität von Informationen. IGI Global. https://www.igi-global.com/book/geospatial-web-services/46010 
+* Kralidis, A. T. (2007). Geospatial Web Services (Geodaten-Webdienste): The evolution of geospatial data infrastructure. In The Geospatial Web (S. 223-228). Springer, London. https://link.springer.com/chapter/10.1007/978-1-84628-827-2_22 
+* van den Brink, L., Barnaghi, P., Tandy, J., Atemezing, G., Atkinson, R., Cochrane, B., ... & Janowicz, K. (2019). Best Practices für die Veröffentlichung, Abfrage und Nutzung von Geodaten im Web. Semantic Web, 10(1), 95-114. https://content.iospress.com/articles/semantic-web/sw305
+* Clabby, J. (2003). Webdienste erklärt: Lösungen und Anwendungen für die reale Welt. Prentice Hall Professional. https://books.google.be/books?hl=nl&lr=&id=AKkFqV9-_9AC&oi=fnd&pg=PR13&dq=%22fundamentals+of+web+services%22&ots=PL1iLMeHGW&sig=H9XAty66RX8LFIKAo9-VmOOEZDA#v=onepage&q=%22fundamentals%20of%20web%20services%22&f=false
+* Link zu einer Seite oder einer Vorlesung, die OGC WMS in einer einfachen Sprache beschreibt: https://www.ogc.org/standards/wms/introduction 
+* Link zu einer Seite oder einer Vorlesung, die OGC WFS in einfacher Sprache beschreibt: http://opengeospatial.github.io/e-learning/wfs/text/basic-main.html
+* Link zu Geospatial Web Services: https://gis4schools.readthedocs.io/en/latest/part2/2_1.html
+
+
+**Ihr Feedback ist willkommen!**
+
+Wenn Sie Defizite in diesem OER-Modul festgestellt haben oder Ideen zur Verbesserung des OER-Materials haben, sind Sie eingeladen, Einträge in die Issue-Liste im [Github repository dieses OERs]( https://github.com/oer4sdi/...).
