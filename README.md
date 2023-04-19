@@ -8,7 +8,8 @@ The module is structured as follows
 1. Overview
 2. Thematic Background 
 3. Excercices and Guides
-4. Wrap up 
+4. Quiz
+5. Wrap up 
 
 This tutorial is mainly designed for students who want to spend about ... minutes on improving their skills in integrating Data from Geosaptial Web Services. You should have some basic knowledge of GIS Software and it wouldn't be bad if you already have some experience in using the free open source Software Geoserver.
 
@@ -42,6 +43,6 @@ SOFTWARE.
 
 ### Authors and funding
 
-This tutorial was developed at the Institute of Geodesy at Bochum University of Applied Sciences in close cooperation with the University of Münster and the University of Bochum. Main author is Fabian Przybylak under the direction of Prof. Dr. Carsten Keßler.
+This OER Module has been developed at the Institute of Geodesy, Bochum University of Applied Sciences in close cooperation with the University of Münster and the University of Bochum. Main author is Fabian Przybylak under the direction of Prof. Dr. Carsten Keßler.
 
 The OER4SDI project has been recommended by the Digital University NRW and is funded by the Ministry of Culture and Science NRW.
