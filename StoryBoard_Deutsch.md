@@ -194,4 +194,4 @@ Im Internet finden Sie eine Fülle von Ressourcen zu Geospatial Web Services. Hi
 
 **Ihr Feedback ist willkommen!**
 
-Wenn Sie Defizite in diesem OER-Modul festgestellt haben oder Ideen zur Verbesserung des OER-Materials haben, sind Sie herzlich eingeladen, Einträge in die Issue-Liste im [Github repository dieses OERs]( https://github.com/oer4sdi/...).
+Wenn Sie Defizite in diesem OER-Modul festgestellt haben oder Ideen zur Verbesserung des OER-Materials haben, sind Sie herzlich eingeladen, Einträge in die Issue-Liste im [Github repository dieses OERs](https://github.com/oer4sdi/Geospatial-Web-Services).
