@@ -22,6 +22,10 @@ The OER is implemented as an  [H5P](https://h5p.org/) module that can be downloa
 
 Simply download just the H5P file, upload it to one of the environments and use it from there...
 
+###Quick Overview of the Content
+
+If you first want to get a quick overview of the concrete contents of the H5P module, you will find a script structured according to the H5P module with integrated illustrations in the [Storyboard](/StoryBoard_Deutsch.md). 
+
 ### Copyright and License Statement
 
 Copyright (c) 2022 [...](...)
