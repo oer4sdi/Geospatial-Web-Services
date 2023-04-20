@@ -9,28 +9,28 @@ Das Modul ist wie folgt aufgebaut
 2. Thematischer Hintergrund 
 3. Übungen und Leitfäden
 4. Quiz
-5. Nachbereitung 
+5. Zusammenfassung 
 
-Dieses Tutorial ist hauptsächlich für Studenten gedacht, die etwa ... Minuten damit verbringen wollen, ihre Fähigkeiten bei der Integration von Daten aus Geosaptial Web Services zu verbessern. Sie sollten einige Grundkenntnisse in GIS-Software haben und es wäre nicht schlecht, wenn Sie bereits einige Erfahrung mit der freien Open-Source-Software Geoserver haben.
+Dieses Tutorial ist hauptsächlich für Studenten gedacht, die etwa ... Minuten damit verbringen wollen, ihre Fähigkeiten bei der Integration von Daten aus Geosaptial Web Services zu verbessern. Du solltest einige Grundkenntnisse in GIS-Software haben und es wäre nicht schlecht, wenn du bereits einige Erfahrung mit der freien Open-Source-Software Geoserver haben.
 
 ### Wie wird das OER-Modul verwendet?
 
-Die OER ist als [H5P](https://h5p.org/)-Modul implementiert, das heruntergeladen und in jede H5P-Laufzeitumgebung eingebettet werden kann, wie z.B.: 
+Das OER ist als [H5P](https://h5p.org/)-Modul implementiert, das heruntergeladen und in jede H5P-Laufzeitumgebung eingebettet werden kann, wie z.B.: 
 - Lernmanagementsysteme auf Basis von Moodle oder Ilias 
 - H5P-Bearbeitungsumgebungen wie der [H5P Official Editor](https://h5p.org/) oder der leichtgewichtige [LUMI H5P Editor](https://lumi.education/)
 - Inhaltsverwaltungssysteme wie [Wordpress](https://wordpress.com/) mit installiertem "H5P"-Plugin
 
-Laden Sie einfach nur die H5P-Datei herunter, laden Sie sie in eine der Umgebungen hoch und verwenden Sie sie von dort aus...
+Lade dir einfach nur die H5P-Datei herunter, lade sie in eine der Umgebungen hoch und verwende sie von dort aus.
 
 ###Schneller Überblick über den Inhalt
 
-Wenn Sie sich zunächst einen schnellen Überblick über die konkreten Inhalte des H5P-Moduls verschaffen wollen, finden Sie im [Storyboard](/StoryBoard_Deutsch.md) ein nach dem H5P-Modul strukturiertes Skript mit integrierten Illustrationen. 
+Wenn du dir zunächst einen schnellen Überblick über die konkreten Inhalte des H5P-Moduls verschaffen willst, findest du im [Storyboard](/StoryBoard_Deutsch.md) ein nach dem H5P-Modul strukturiertes Skript mit integrierten Illustrationen. 
 
 ### Copyright und Lizenzerklärung
 
 Copyright (c) 2022 [...](...)
 
-a) Es steht Ihnen frei, das Tutorial (H5P-Inhalte) unter den Bedingungen der [CC-BY-SA 4.0 Lizenz](https://creativecommons.org/licenses/by-sa/4.0/legalcode) zu verwenden, zu verändern und zu vervielfältigen. 
+a) Es steht dir frei, das Tutorial (H5P-Inhalte) unter den Bedingungen der [CC-BY-SA 4.0 Lizenz](https://creativecommons.org/licenses/by-sa/4.0/legalcode) zu verwenden, zu verändern und zu vervielfältigen. 
 
 b) Jeglicher Quellcode, der im OER-Modell enthalten ist oder mitgeliefert wird, kann unter den Bedingungen der MIT-Lizenz verwendet werden:
 
@@ -47,6 +47,6 @@ SOFTWARE.
 
 ### Autoren und Finanzierung
 
-Dieses OER-Modul wurde am Institut für Geodäsie der Fachhochschule Bochum in enger Zusammenarbeit mit der Universität Münster und der Universität Bochum entwickelt. Hauptautor ist Fabian Przybylak unter der Leitung von Prof. Dr. Carsten Keßler.
+Dieses OER-Modul wurde am Institut für Geodäsie der Fachhochschule Bochum in enger Zusammenarbeit mit der Universität Münster und der Hochschule Bochum entwickelt. Hauptautor ist Fabian Przybylak unter der Leitung von Prof. Dr. Carsten Keßler.
 
 Das Projekt OER4SDI wurde von der Digitalen Hochschule NRW empfohlen und wird durch das Ministerium für Kultur und Wissenschaft NRW gefördert.
