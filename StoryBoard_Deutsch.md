@@ -155,7 +155,7 @@ Insgesamt ist GeoServer eine leistungsstarke und vielseitige Plattform für die 
 **Benötigte Softwarekomponenten, die in dieser Übung verwendet werden:** 
 
 **QGIS** ist eine freie und quelloffene, plattformübergreifende Desktop-Anwendung für geografische Informationssysteme (GIS), die das Anzeigen, Bearbeiten, Drucken und Analysieren von Geodaten unterstützt. 
-(Sie können **QGIS** über die offizielle Website https://qgis.org/de/site/forusers/download.html installieren und der dortigen Anleitung folgen)
+(Sie können **QGIS** über die [offizielle Webseite](https://qgis.org/de/site/forusers/download.html) installieren und der dortigen Anleitung folgen)
 
 **Übung**
 
@@ -183,13 +183,13 @@ Hey! Das hast du gut gemacht! Wir hoffen, dass Sie nun eine Vorstellung davon ha
 
 Im Internet finden Sie eine Fülle von Ressourcen zu Geospatial Web Services. Hier sind einige Empfehlungen: 
 
-* Zhao, P., & Di, L. (Eds.). (2010). Geospatial Web Services: Advances in information interoperability: Fortschritte bei der Interoperabilität von Informationen. IGI Global. https://www.igi-global.com/book/geospatial-web-services/46010 
-* Kralidis, A. T. (2007). Geospatial Web Services (Geodaten-Webdienste): The evolution of geospatial data infrastructure. In The Geospatial Web (S. 223-228). Springer, London. https://link.springer.com/chapter/10.1007/978-1-84628-827-2_22 
-* van den Brink, L., Barnaghi, P., Tandy, J., Atemezing, G., Atkinson, R., Cochrane, B., ... & Janowicz, K. (2019). Best Practices für die Veröffentlichung, Abfrage und Nutzung von Geodaten im Web. Semantic Web, 10(1), 95-114. https://content.iospress.com/articles/semantic-web/sw305
-* Clabby, J. (2003). Webdienste erklärt: Lösungen und Anwendungen für die reale Welt. Prentice Hall Professional. https://books.google.be/books?hl=nl&lr=&id=AKkFqV9-_9AC&oi=fnd&pg=PR13&dq=%22fundamentals+of+web+services%22&ots=PL1iLMeHGW&sig=H9XAty66RX8LFIKAo9-VmOOEZDA#v=onepage&q=%22fundamentals%20of%20web%20services%22&f=false
-* Link zu einer Seite oder einer Vorlesung, die OGC WMS in einer einfachen Sprache beschreibt: https://www.ogc.org/standards/wms/introduction 
-* Link zu einer Seite oder einer Vorlesung, die OGC WFS in einfacher Sprache beschreibt: http://opengeospatial.github.io/e-learning/wfs/text/basic-main.html
-* Link zu Geospatial Web Services: https://gis4schools.readthedocs.io/en/latest/part2/2_1.html
+* [Zhao, P., & Di, L. (Eds.). (2010). Geospatial Web Services: Advances in information interoperability: Fortschritte bei der Interoperabilität von Informationen. IGI Global.](https://www.igi-global.com/book/geospatial-web-services/46010) 
+* [Kralidis, A. T. (2007). Geospatial Web Services (Geodaten-Webdienste): The evolution of geospatial data infrastructure. In The Geospatial Web (S. 223-228). Springer, London.](https://link.springer.com/chapter/10.1007/978-1-84628-827-2_22) 
+* [van den Brink, L., Barnaghi, P., Tandy, J., Atemezing, G., Atkinson, R., Cochrane, B., ... & Janowicz, K. (2019). Best Practices für die Veröffentlichung, Abfrage und Nutzung von Geodaten im Web. Semantic Web, 10(1), 95-114.](https://content.iospress.com/articles/semantic-web/sw305)
+* [Clabby, J. (2003). Webdienste erklärt: Lösungen und Anwendungen für die reale Welt. Prentice Hall Professional.](https://books.google.be/books?hl=nl&lr=&id=AKkFqV9-_9AC&oi=fnd&pg=PR13&dq=%22fundamentals+of+web+services%22&ots=PL1iLMeHGW&sig=H9XAty66RX8LFIKAo9-VmOOEZDA#v=onepage&q=%22fundamentals%20of%20web%20services%22&f=false)
+* [Link zu einer Seite oder einer Vorlesung, die OGC WMS in einer einfachen Sprache beschreibt](https://www.ogc.org/standards/wms/introduction) 
+* [Link zu einer Seite oder einer Vorlesung, die OGC WFS in einfacher Sprache beschreibt](http://opengeospatial.github.io/e-learning/wfs/text/basic-main.html)
+* [Link zu Geospatial Web Services](https://gis4schools.readthedocs.io/en/latest/part2/2_1.html)
 
 
 **Ihr Feedback ist willkommen!**
