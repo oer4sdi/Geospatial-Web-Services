@@ -54,7 +54,7 @@ Aus diesem Grund sind Geospatial Web Services in der Regel nach den vom Open Geo
 Geospatial Web Services sind eine Art von Webdiensten, die es ermöglichen, Geodaten und -dienste im Internet bereitzustellen, abzurufen und zu verarbeiten. Diese Dienste werden in der Regel von Geodaten- oder GIS-Organisationen, Regierungsbehörden, Unternehmen und anderen Einrichtungen bereitgestellt, die Geodaten verwalten.
 
 BILD
-
+![](https://github.com/oer4sdi/Geospatial-Web-Services/blob/main/Single_Learning_Element/Video/Ppt_VertiefenderInhalt_M1.gif) 
 
 **Wofür braucht man Geospatial Web Services?**
 Durch die Verwendung von Geospatial Web Services können Benutzer auf Geodaten von verschiedenen Quellen zugreifen, umfassende Analysen durchführen und maßgeschneiderte Anwendungen und Visualisierungen erstellen.
