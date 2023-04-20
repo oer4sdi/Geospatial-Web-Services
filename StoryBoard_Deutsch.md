@@ -32,7 +32,7 @@ Das Projekt OER4SDI wurde von der Digitalen Hochschule NRW empfohlen und wird du
 
 **Gliederung des thematischen Hintergrunds** 
 * Kurze Einleitung mit allgemeinem Kontext und Hintergrund (in wenigen Sätzen) 
-* Thematisches Video (Hauptinformationen über den Inhalt; Textakkordion welches die gegebenen Informationen zusammenfasst)
+* Inhaltliche Vertiefung (Videoformat + Textakkordion welches die gegebenen Informationen zusammenfasst)
 
 
 ### 2.1 Kurze Einführung
@@ -48,7 +48,7 @@ Datenverbreitungssysteme müssen sich immer mit einem Heterogenitätsproblem aus
 **Welche Lösung gibt es dafür?**
 Aus diesem Grund sind Geospatial Web Services in der Regel nach den vom Open Geospatial Consortium entwickelten OGC-Standards organisiert. Diese Standards ermöglichen, dass die Services interoperabel sind und von verschiedenen Anwendungen und Plattformen übergreifend verwendet werden können.
 
-### 2.2 Thematisches Video (Hauptinformationen)
+### 2.2 Inhaltliche Vertiefung (Video)
 
 **Was sind Geospatial Webdienste?**
 Geospatial Web Services sind eine Art von Webdiensten, die es ermöglichen, Geodaten und -dienste im Internet bereitzustellen, abzurufen und zu verarbeiten. Diese Dienste werden in der Regel von Geodaten- oder GIS-Organisationen, Regierungsbehörden, Unternehmen und anderen Einrichtungen bereitgestellt, die Geodaten verwalten.
@@ -61,8 +61,8 @@ Geospatial Web Services sind strukturiert, um geografische Daten und Funktionali
 
 Geospatial Web Services verwenden in der Regel eine oder mehrere standardisierte Schnittstellen, die von dem Open Geospatial Consortium (OGC) spezifiziert wurden. Die OGC-Schnittstellen definieren das Format und die Struktur der Daten, die vom Server zurückgegeben werden, sowie die Methoden und Parameter, mit denen die Daten abgefragt werden können.
 
-**Was ist das OGC Consortium?**
-Das OGC Consortium oder auch Open Geospatial Consortium ist eine gemeinnützige Organisation, die sich auf die Entwicklung von Standards für Geodaten und Geodienste konzentriert. Die Organisation wurde im Jahr 1994 gegründet und hat ihren Hauptsitz in den USA.
+**Was ist das OGC?**
+Das OGC oder auch Open Geospatial Consortium ist eine gemeinnützige Organisation, die sich auf die Entwicklung von Standards für Geodaten und Geodienste konzentriert. Die Organisation wurde im Jahr 1994 gegründet und hat ihren Hauptsitz in den USA.
 
 Das Ziel des OGC ist es, offene Standards für Geodaten und -dienste zu entwickeln und zu fördern, um die Interoperabilität und den Austausch von Geodaten und -diensten zwischen verschiedenen Systemen, Anwendungen und Organisationen zu erleichtern. Die OGC-Standards umfassen Protokolle für den Zugriff auf Geodaten (z.B. WMS, WFS, WCS), Datenmodellierung, Geoprocessing, Metadaten, Katalogisierung und vieles mehr.
 
@@ -147,7 +147,7 @@ Insgesamt ist GeoServer eine leistungsstarke und vielseitige Plattform für die 
 ## 3. Übungen und Leitfäden
 
 **Aufbau der Übungen und Leitfäden** 
-* Übung 
+* Aufgabenstellung 
 * Videoguide (Screencast)
 
 ### 3.1 Übung 1
@@ -157,9 +157,21 @@ Insgesamt ist GeoServer eine leistungsstarke und vielseitige Plattform für die 
 **QGIS** ist eine freie und quelloffene, plattformübergreifende Desktop-Anwendung für geografische Informationssysteme (GIS), die das Anzeigen, Bearbeiten, Drucken und Analysieren von Geodaten unterstützt. 
 (Sie können **QGIS** über die [offizielle Webseite](https://qgis.org/de/site/forusers/download.html) installieren und der dortigen Anleitung folgen)
 
-**Übung**
+**Aufgabenstellung**
 
+Stöbere einige Zeit auf den Webseiten der angehängten Linksammlung und prüfe welche Services auf den Webseiten angeboten werden. Achte zusätzlich darauf in welcher Form die Services bereitstehen (WMS, WFS, etc.).
 
+* [Geodatenkatalog Deutschland](https://gdk.gdi-de.org/gdi-de/srv/ger/catalog.search#/home)
+* [Geoportal Deutschland](https://www.geoportal.de/) 
+* [Geodatenkatalog Schweiz](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/home)
+
+Du hast nun einige Quellen kennengelernt über die du Geospatial Web Services finden kannst. Wähle im folgenden einen WMS- und einen dazu passenden WFS-Service aus und implementiere diese in ein simples QGIS Projekt. Folge dazu gerne auch dem angehängten Videoguide. 
+
+Falls ein Service mal nicht funktionieren sollte dann probiere zunächst einen anderen aus. Es kann vorkommen, dass Services vom Provider nicht mehr unterstützt werden oder Links nicht mehr aktuell sind. 
+
+**Inhalt des Videoguides**
+
+ssd
 
 ### 3.2 Übung 2
 **Benötigte Softwarekomponenten, die in dieser Übung verwendet werden:** 
@@ -168,8 +180,15 @@ Insgesamt ist GeoServer eine leistungsstarke und vielseitige Plattform für die 
 
 **GeoServer** ist ein in Java geschriebener Open-Source-Server, der es Benutzern ermöglicht, Geodaten gemeinsam zu nutzen, zu verarbeiten und zu bearbeiten.
 
-**Übung**
+**Aufgabenstellung**
 
+Lade dir die zur Verfügung gestellten Geodaten herunter und schaue dir das Folgende Video an. Deine Aufgabe besteht darin dem Screencast zu Folgen und selbst einen WMS- und einen WFS-Service Local auf deinem System zu hosten. Prüfe anschließend in QGIS ob du erfolgreich warst,  indem du die Services in ein neues QGIS-Projekt einbindest. 
+
+Falls du dich noch tiefer mit dem Thema beschäftigen willst, dann findest du weitere Tutorials in der [offiziellen Dokumentation](https://docs.geoserver.org/) von GeoServer. 
+
+**Inhalt des Videoguides**
+
+ssd
 
 ## 5. Quiz
 
