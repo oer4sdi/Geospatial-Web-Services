@@ -52,10 +52,7 @@ Aus diesem Grund sind Geospatial Web Services in der Regel nach den vom Open Geo
 
 **Was sind Geospatial Webdienste?**
 Geospatial Web Services sind eine Art von Webdiensten, die es ermöglichen, Geodaten und -dienste im Internet bereitzustellen, abzurufen und zu verarbeiten. Diese Dienste werden in der Regel von Geodaten- oder GIS-Organisationen, Regierungsbehörden, Unternehmen und anderen Einrichtungen bereitgestellt, die Geodaten verwalten.
-
-BILD
 ![](Single_Learning_Element/Img/Slide1.png) 
-
 **Wofür braucht man Geospatial Web Services?**
 Durch die Verwendung von Geospatial Web Services können Benutzer auf Geodaten von verschiedenen Quellen zugreifen, umfassende Analysen durchführen und maßgeschneiderte Anwendungen und Visualisierungen erstellen.
 
@@ -63,7 +60,7 @@ Durch die Verwendung von Geospatial Web Services können Benutzer auf Geodaten v
 Geospatial Web Services sind strukturiert, um geografische Daten und Funktionalitäten über das Web bereitzustellen. Sie basieren in der Regel auf einer Client-Server-Architektur, bei der der Client (in der Regel ein Webbrowser) eine Anfrage an den Server stellt und dieser daraufhin geografische Daten und Funktionalitäten zurückliefert.
 
 Geospatial Web Services verwenden in der Regel eine oder mehrere standardisierte Schnittstellen, die von dem Open Geospatial Consortium (OGC) spezifiziert wurden. Die OGC-Schnittstellen definieren das Format und die Struktur der Daten, die vom Server zurückgegeben werden, sowie die Methoden und Parameter, mit denen die Daten abgefragt werden können.
-
+![](Single_Learning_Element/Img/Slide2.png) 
 **Was ist das OGC?**
 Das OGC oder auch Open Geospatial Consortium ist eine gemeinnützige Organisation, die sich auf die Entwicklung von Standards für Geodaten und Geodienste konzentriert. Die Organisation wurde im Jahr 1994 gegründet und hat ihren Hauptsitz in den USA.
 
@@ -72,7 +69,7 @@ Das Ziel des OGC ist es, offene Standards für Geodaten und -dienste zu entwicke
 Das OGC Consortium arbeitet eng mit anderen Standardisierungsorganisationen und Regierungsbehörden weltweit zusammen, um sicherzustellen, dass die Standards für Geodaten und -dienste in verschiedenen Anwendungsbereichen und in verschiedenen Ländern harmonisiert sind.
 
 Die Mitgliedschaft im OGC steht Organisationen und Einzelpersonen aus der Geodaten- und Geodienstbranche offen und bietet ihnen die Möglichkeit, an der Entwicklung von Standards teilzunehmen und von der Zusammenarbeit mit anderen Fachleuten zu profitieren.
-
+![](Single_Learning_Element/Img/Slide3.png) 
 **Wie sehen die OGC-Architekturelemente und die wichtigsten OGC-Standards aus?**
 Die OGC Web Services-Architektur besteht aus einer Reihe von Komponenten, die zusammenarbeiten, um die verschiedenen Arten von Geodaten-Webdiensten bereitzustellen. Die wichtigsten Komponenten sind:
 
@@ -80,7 +77,7 @@ Die OGC Web Services-Architektur besteht aus einer Reihe von Komponenten, die zu
 * **Service Requester:** Dies ist der Client, der den Webdienst anfordert und auf die Antwort vom Service Provider wartet.
 * **Service Registry:** Dies ist ein Verzeichnis, das Informationen über verfügbare Geodaten-Webdienste enthält, damit Service Requester diese finden und verwenden können.
 * **Service Broker:** Dies ist ein Vermittler, der die Interoperabilität zwischen verschiedenen Geodaten-Webdiensten ermöglicht, indem er Daten und Anfragen zwischen ihnen übersetzt.
-
+![](Single_Learning_Element/Img/Slide4.png) 
 Geospatial Web Services verwenden offene Standards und Protokolle, um den Austausch von Geodaten zwischen verschiedenen Systemen und Plattformen zu erleichtern. Zu den wichtigsten Standards gehören: 
 
 * Web Map Service (**WMS**) 
@@ -95,14 +92,12 @@ Geospatial Web Services verwenden offene Standards und Protokolle, um den Austau
 * Ein Web Coverage Service (**WCS**) ermöglicht den Zugriff auf und die Abfrage von räumlichen Rasterdaten wie Satellitenbildern oder Höhenmodellen.
 * Ein Catalog Service (**CSW**) ermöglicht es einem Client, Metadaten über verfügbare Geodaten und -dienste zu suchen und abzurufen.
 * Ein Sensor Observation Service (**SOS**) ermöglicht den Zugriff auf Echtzeitdaten von Sensoren, z.B. Umweltsensoren.
-
+![](Single_Learning_Element/Img/Slide5.png) 
 **Wie sieht eine typische Web-Anfrage für einen Web map Service aus?**
 Das Web Map Service (WMS) Protokoll ist eine von dem Open Geospatial Consortium (OGC) definierte Schnittstelle, die es ermöglicht, Karten und geografische Daten über das Web abzufragen und zu visualisieren. Das WMS-Protokoll definiert das Format und die Struktur der Daten, die vom Server zurückgegeben werden, sowie die Methoden und Parameter, mit denen die Daten abgefragt werden können.
 
 Das WMS-Protokoll verwendet HTTP oder HTTPS als Transportprotokoll. Eine typische WMS-Anfrage besteht aus einer URL, die verschiedene Parameter enthält, die den Inhalt der Karte bestimmen. Hier ist ein Beispiel einer WMS-Anfrage und der zugehörigen Parameter:
-
-BILD!!
-
+![](Single_Learning_Element/Img/Slide6.png) 
 Der Server verarbeitet die Anfrage und sendet die Karte als Antwort im angeforderten Format zurück. Die Karte kann dann im Browser oder in einer Anwendung angezeigt werden.
 
 **Welche weiteren Anfragen können an einen WMS-Server gestellt werden?**
@@ -114,7 +109,7 @@ Ein WMS-Protokoll definiert noch weitere Anfragen, die von einem Client an einen
 * **DescribeLayer:** Mit dieser Anfrage kann der Client Informationen über die Eigenschaften und Metadaten eines bestimmten Layers abrufen. Die Antwort enthält eine XML-Datei oder ein anderes Format, das die Eigenschaften und Metadaten des Layers enthält.
 
 Es gibt auch andere Anfragen wie **GetLegendGraphic** und **GetStyles**, die für bestimmte Anwendungsfälle nützlich sein können.
-
+![](Single_Learning_Element/Img/Slide7.png) 
 **Welche weiteren Anfragen können an einen WFS-Server gestellt werden?**
 Ein Web Feature Service (WFS) Server verwendet andere Anfragen als ein Web Map Service (WMS) Server, da der WFS-Standard sich auf den Zugriff und die Abfrage von vektorbasierten Geodaten konzentriert, während der WMS-Standard die Visualisierung von Karten im Fokus hat.
 
@@ -124,7 +119,7 @@ Ein Web Feature Service (WFS) Server verwendet andere Anfragen als ein Web Map S
 * **Transaction:** Mit dieser Anfrage kann der Client Änderungen an den Daten auf dem WFS-Server vornehmen. Die Operationen können Insert, Update oder Delete sein, und sie werden in einer XML-Datei definiert, die an den Server gesendet wird.
 
 Es gibt ebenfalls noch andere Anfragen wie **LockFeature**, **GetPropertyValue** und **GetFeatureWithLock**.
-
+![](Single_Learning_Element/Img/Slide8.png) 
 **Was ist GeoServer?**
 GeoServer wurde erstmals im Jahr 2001 von der Open Source Geospatial Foundation (OSGeo) ins Leben gerufen. Die Idee hinter GeoServer war, eine Open-Source-Software zu schaffen, die es Benutzern ermöglicht, Geodaten im Web zu verwalten und bereitzustellen.
 
@@ -133,7 +128,7 @@ Die ursprüngliche Version von GeoServer wurde von der australischen Regierungsb
 GeoServer hat seit seiner Gründung eine starke Unterstützung von der OSGeo-Community erfahren. Die OSGeo ist eine gemeinnützige Organisation, die sich der Förderung von Open-Source-Geodaten-Software widmet und GeoServer ist eines ihrer wichtigsten Projekte. GeoServer hat auch eine aktive Benutzer-Community und wird von vielen Regierungsbehörden, Unternehmen und gemeinnützigen Organisationen auf der ganzen Welt eingesetzt.
 
 Heute ist GeoServer eine der beliebtesten Open-Source-Softwarelösungen für Geodatenmanagement und -bereitstellung im Web. Es ist bekannt für seine Flexibilität, Skalierbarkeit und Leistung und wird von einer wachsenden Anzahl von Entwicklern und Benutzern weltweit genutzt.
-
+![](Single_Learning_Element/Img/Slide9.png) 
 **Welche Funktionen hat GeoServer?**
 GeoServer bietet eine Plattform für die Verwaltung und Veröffentlichung von Geodaten im Web, indem es Daten in verschiedenen Geodatenformaten (wie zum Beispiel Shapefiles, Geotiffs, PostGIS-Datenbanken) verarbeitet und sie als Webdienste (wie zum Beispiel WMS, WFS, WCS) bereitstellt.
 
@@ -146,7 +141,7 @@ Die Funktionen von GeoServer umfassen:
 * **Skalierbarkeit:** GeoServer kann auf einer Vielzahl von Plattformen ausgeführt werden, einschließlich Desktop-Computern, Servern und Cloud-Infrastrukturen. Es ist auch in der Lage, hohe Lasten zu bewältigen und bietet eine hohe Verfügbarkeit und Leistung.
 
 Insgesamt ist GeoServer eine leistungsstarke und vielseitige Plattform für die Verwaltung und Bereitstellung von Geodaten im Web. Die es Benutzern ermöglicht, Geodaten auf einfache Weise zu verwalten und zu teilen, was es zu einem wichtigen Werkzeug für Geodateninfrastrukturen macht.
-
+![](Single_Learning_Element/Img/Slide10.png) 
 ## 3. Übungen und Leitfäden
 
 **Aufbau der Übungen und Leitfäden** 
