@@ -186,7 +186,10 @@ Falls du dich noch tiefer mit dem Thema beschäftigen willst, dann findest du we
 
 **Inhalt des Videoguides**
 
-ssd
+Installation von Geoserver über Docker
+
+`docker pull docker.osgeo.org/geoserver:2.22.0`
+
 
 ## 5. Quiz
 
