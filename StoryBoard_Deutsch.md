@@ -188,7 +188,10 @@ Falls du dich noch tiefer mit dem Thema beschäftigen willst, dann findest du we
 
 Installation von Geoserver über Docker
 
-`docker pull docker.osgeo.org/geoserver:2.22.0`
+
+```shell
+docker pull docker.osgeo.org/geoserver:2.22.0
+```
 
 
 ## 5. Quiz
