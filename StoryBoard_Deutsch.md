@@ -193,6 +193,13 @@ Installation von Geoserver über Docker
 docker pull docker.osgeo.org/geoserver:2.22.0
 ```
 
+Ausführen des Docker Images 
+
+```shell
+docker run -it -p 80:8080 docker.osgeo.org/geoserver:2.22.0
+```
+
+Check http://localhost/geoserver
 
 ## 5. Quiz
 
