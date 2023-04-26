@@ -1,7 +1,7 @@
-##Skript Videoguide 1 Modul 1
+## Skript Videoguide 1 Modul 1
 
 
-###Aufgabe: 
+### Aufgabe: 
 
 
 Stöbere einige Zeit auf den Webseiten der angehängten Linksammlung und prüfe welche Services auf den Webseiten angeboten werden. Achte zusätzlich darauf in welcher Form die Services bereitstehen (WMS, WFS, etc.).
@@ -11,7 +11,7 @@ o	Geodatenkatalog Schweiz: https://www.geocat.ch/geonetwork/srv/ger/catalog.sear
 Du hast nun einige Quellen kennengelernt über die du Geospatial Web Services finden kannst. Wähle im folgenden einen WMS- und einen dazu passenden WFS-Service aus und implementiere diese in ein simples QGIS Projekt. Folge dazu gerne auch dem angehängten Videoguide. 
 Falls ein Service mal nicht funktionieren sollte dann probiere zunächst einen anderen aus. Es kann vorkommen, dass Services vom Provider nicht mehr unterstützt werden oder Links nicht mehr aktuell sind. 
 
-###Skript
+### Skript
 
 Hallo und herzlich willkommen zu einem neuen Screencast zum Thema "Geospatial Web Services". In diesem Screencast möchten wir uns einige Beispiele für WMS- und WFS-Services ansehen und diese in einem einfachen QGIS-Projekt integrieren.
 
