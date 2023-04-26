@@ -169,7 +169,9 @@ Falls ein Service mal nicht funktionieren sollte dann probiere zunächst einen a
 
 **Inhalt des Videoguides**
 
-ssd
+Das Skript zum Videoguide findest du [hier](https://github.com/oer4sdi/Geospatial-Web-Services/blob/main/Single_Learning_Element/Text/Skript%20Videoguide%201%20Modul%201.docx) 
+
+Das Vollständige Video findest du [hier](https://github.com/oer4sdi/Geospatial-Web-Services/tree/main/Single_Learning_Element/Video) 
 
 ### 3.2 Übung 2
 **Benötigte Softwarekomponenten, die in dieser Übung verwendet werden:** 
@@ -185,6 +187,10 @@ Lade dir die zur Verfügung gestellten Geodaten herunter und schaue dir das Folg
 Falls du dich noch tiefer mit dem Thema beschäftigen willst, dann findest du weitere Tutorials in der [offiziellen Dokumentation](https://docs.geoserver.org/) von GeoServer. 
 
 **Inhalt des Videoguides**
+
+Das Skript zum Videoguide findest du [hier](https://github.com/oer4sdi/Geospatial-Web-Services/blob/main/Single_Learning_Element/Text/Skript%20Videoguide%202%20Modul%201.docx) 
+
+Das Vollständige Video findest du [hier](https://github.com/oer4sdi/Geospatial-Web-Services/tree/main/Single_Learning_Element/Video) 
 
 Installation von Geoserver über Docker
 
