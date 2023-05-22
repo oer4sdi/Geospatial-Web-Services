@@ -49,4 +49,4 @@ SOFTWARE.
 
 This OER Module has been developed at the Institute of Geodesy, Bochum University of Applied Sciences in close cooperation with the University of Münster and the University of Bochum. Main author is Fabian Przybylak under the direction of Prof. Dr. Carsten Keßler.
 
-The OER4SDI project has been recommended by the Digital University NRW and is funded by the Ministry of Culture and Science NRW.
+The OER4SDI project has been recommended by the Digital University NRW and is funded by the Ministry of Culture and Science NRW..
