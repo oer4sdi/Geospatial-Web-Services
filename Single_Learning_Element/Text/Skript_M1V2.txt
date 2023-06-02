@@ -1,0 +1,75 @@
+Hallo und herzlich willkommen. In diesem Screencast beschäftigen wir uns mit dem Thema "Geospatial Web Services". 
+
+Hierzu werden wir uns einige Beispiele für Web Map - und Web Feature Services ansehen und diese in ein einfaches QGIS-Projekt integrieren.
+
+Bevor wir jedoch mit der Integration in QGIS beginnen, wollen wir uns zunächst Webseiten ansehen, auf denen wir potenzielle Services finden können. 
+
+
+
+Eine vertrauenswürdige Quelle für Geospatial Web Services ist beispielsweise der Geoda-tenkatalog Deutschland (https://gdk.gdi-de.org/gdi-de/srv/ger/catalog.search#/home). 
+
+Der Geodatenkatalog Deutschland ist ein zentraler Katalog für geografische Daten auf deut-schem Hoheitsgebiet. Er bietet eine umfassende Sammlung von Geodaten, die von ver-schiedenen Behörden und Organisationen bereitgestellt werden.
+
+Der Geodatenkatalog wird von der Arbeitsgemeinschaft der Vermessungsverwaltungen der Länder der Bundesrepublik Deutschland (AdV) betrieben. Er hat das Ziel, den Zugang zu ge-ografischen Daten zu erleichtern und die Verbreitung und Nutzung von Geodaten in Deutsch-land zu fördern.
+
+Über die Suchfunktion oder die vorgeschlagenen Themenbereiche können sehr einfach Ser-vices zu Datensätzen gefunden werden.
+
+Zu den zentralen Themenbereichen gehören die geographischen Basisdaten, mit topografi-schen Karten, digitalen Geländemodellen, Luft- und Satellitenbildern. Daten der Verwaltung mit Informationen zu den administrativen Einheiten. Daten zur Umwelt und Natur, zum Ver-kehr und der Infrastruktur, sowie Geodaten die für die Planung und das Bauwesen relevant sein können. 
+
+Der Geodatenkatalog Deutschland ermöglicht es, nach geografischen Daten zu suchen, Me-tadaten zu den einzelnen Datensätzen einzusehen und die Daten herunterzuladen. Er bietet auch einen Überblick über die Datenhaltenden Stellen, also die Organisationen, die die je-weiligen Daten bereitstellen.
+
+Häufig können die Daten direkt im Browser in einer Webkarte aufgerufen werden, um sich einen ersten Eindruck über Inhalt und Ausdehnung machen zu können. 
+
+In der Datenbeschreibung sind neben einer kurzen Zusammenfassung der Inhalte die für die Verknüpfung notwendigen URLs zu den Web Services übersichtlich aufgelistet. 
+
+
+
+Ähnlich verhält es sich mit dem Geoportal Deutschland (https://www.geoportal.de/), das ebenfalls zahlreiche Dienste für Datensätze aus Deutschland anbietet. Allerdings handelt es sich bei den angebotenen Datensätzen weniger um kleine Einzelprodukte, sondern in der Regel um großflächige, bereits aufbereitete Produkte, die in ihrer Ausdehnung oft das ge-samte Bundesgebiet abdecken.
+
+Das Geoportal Deutschland wird vom Bundesamt für Kartographie und Geodäsie (BKG) be-trieben und dient ebenfalls als zentrale Anlaufstelle für Geodaten verschiedener Behörden und Organisationen.
+
+Das Geoportal ermöglicht es Benutzern, nach spezifischen Geodaten zu suchen. Sie können nach Orten, Themen, Datentypen und weiteren Kriterien suchen, um relevante Daten zu finden.
+
+Außerdem ermöglicht es die Anzeige und Interaktion mit geografischen Daten auf interakti-ven Karten. Benutzer können verschiedene Kartenthemen anzeigen, Ebenen ein- und aus-blenden und die Darstellung anpassen.
+
+Über das Ausrufezeichen an den Themenkacheln gelangen wir zu einer Informationsseite, die entweder direkt eine URL zu den angebotenen Services bereithält, oder aber auf die richtige Seite verweist. Das Geoportal unterstützt also ebenfalls den Zugriff auf Geodaten über verschiedene Standards und Protokolle wie (WMS) und (WFS).
+
+
+
+Auch im Ausland gibt es einige gut organisierte Geodatenkataloge. Ein gutes Beispiel dafür ist der Geodatenkatalog der Schweiz	 (https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/home), sucht man also aus-ländische Services, kommt man häufig nicht drum herum auch auf internationalen Websei-ten nach diesen zu suchen. 
+
+
+
+
+Für unser Beispiel möchten wir einen WMS-Service von Basemap.de nutzen, der verschie-dene topographische Karten für Deutschland bereitstellt. 
+
+(Der Service hat die folgende Adresse: https://basemap.de/dienste/wms_capabilities_web_raster.xml )
+
+Sowie einen "Web Feature Service (WFS)" des Bundesamts für Kartographie und Geodäsie, der geographische Informationen wie Verwaltungsgrenzen, Flächennutzung und Geodäti-sche Referenzsysteme bereitstellt. 
+
+Als konkreten Service wählen wir den "WFS VG2500", der Verwaltungsgrenzen für Deutsch-land bereitstellt. 
+
+(Dieser Service hat die Adresse: https://sgx.geodatenzentrum.de/wfs_vg2500 )
+
+
+Kurz zur Wiederholung: Ein WMS (Web Map Service) ist ein Service, der Kartenbilder in Echtzeit generiert und diese als Rasterbilder (z.B. PNG oder JPEG) zurückliefert. 
+Ein WFS (Web Feature Service) hingegen liefert vektorbasierte geographische Informatio-nen, wie z.B. Punkte, Linien oder Polygone, zurück. Diese können dann ebenfalls in Anwen-dungen angezeigt werden, können darüber hinaus aber auch weiterverarbeitet werden. 
+
+Beginnen wir also mit der Integration der Services. Dazu öffnen wir zunächst QGIS und er-stellen ein neues Projekt. 
+Anschließend fügen wir über den Menüpunkt "Layer" -> "Add Layer" -> "Add WMS/WMTS Layer" den WMS-Service hinzu. 
+Hierbei müssen wir lediglich einen Namen festlegen und die URL des Services eingeben. anschließend können wir aus einer Liste von verfügbaren Layern auswählen. 
+
+Wir wählen hier beispielsweise die Basemap "Raster Farbe" aus und ziehen diese in das Layerfenster.
+
+Als nächstes fügen wir über den Menüpunkt "Layer" -> "Add Layer" -> "Add WFS Layer" den WFS-Service hinzu. 
+Hierbei müssen wir ebenfalls lediglich einen Namen vergeben und die URL des Services eingeben. Danach können wir wieder aus einer Liste von verfügbaren Layern auswählen. 
+
+Wir wählen hier den Layer "Bundesländer" aus, der die Verwaltungsgrenzen der deutschen Bundesländer enthält.
+
+Mit einem WFS-Service können wir verschiedene Aktionen durchführen, die mit einem WMS-Service nicht möglich sind. Zum Beispiel können wir die Daten aus dem WFS-Service in QGIS bearbeiten, analysieren und modifizieren, um neue Erkenntnisse zu gewinnen oder neue Karten zu erstellen. Wir können auch komplexe Abfragen durchführen, um nur be-stimmte Daten auszuwählen und zu visualisieren.
+
+Ein weiterer Vorteil von einem WFS-Service ist, dass er in der Lage ist, aktualisierte Daten bereitzustellen, während ein WMS-Service lediglich statische Kartenbilder liefert. Wenn die Daten in der WFS-Datenbank aktualisiert werden, können wir die Änderungen sofort im QGIS-Projekt sehen und darauf reagieren.
+
+Zusammenfassend bietet der Einsatz von WMS- und WFS-Services in QGIS eine leistungs-starke Möglichkeit, um Geodaten anzuzeigen, zu analysieren und zu modifizieren. Mit ei-nem WMS-Service können wir schnell und einfach Kartenbilder darstellen, während ein WFS-Service uns detaillierte Informationen über geographische Daten liefert, die wir bear-beiten und analysieren können, um neue Erkenntnisse zu gewinnen.
+
+Das war unser Screencast zum Thema "Integration von Geospatial Web Services in QGIS". Vielen Dank fürs Zuschauen!
