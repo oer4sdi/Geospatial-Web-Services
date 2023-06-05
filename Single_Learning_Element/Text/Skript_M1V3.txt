@@ -1,0 +1,112 @@
+Hallo und herzlich willkommen. In diesem Screencast werden wir die freie Software GeoServer über Docker installieren, ausführen und selbst einen Web Map- und Web Feature Service einrichten. Ich werde dich durch den Prozess führen, wie du Arbeitsbereiche und Datenspeicher erstellst, Layer veröffentlichst, Stile hinzufügst und die Services in QGIS überprüfst. 
+ 
+Stelle bitte zunächst sicher, dass du Docker einsatzbereit auf deinem System installiert und gestartet hast, dann können wir loslegen.
+ 
+Der erste Schritt besteht darin, GeoServer über Docker zu starten. Dazu öffnen wir die Kommandozeile oder unser Terminal und geben den ersten Befehl „docker pull“ ein, um GeoServer von Docker herunterzuladen. Kopiere am besten den gesamten Befehl aus dem Kurs , um Rechtschreibfehler zu vermeiden. Du kannst gerne die Versionsnummer 2.22 austauschen, falls du eine neuere Version von GeoServer nutzen möchtest. 
+ 
+Der Ladevorgang kann einige Minuten in Anspruch nehmen.
+ 
+Wenn der Vorgang abgeschlossen ist, dann gib den Befehl „docker run“ ein, um GeoServer auszuführen. Kopiere gerne wieder den gesamten Befehl, um Flüchtigkeitsfehler zu vermeiden. 
+ 
+Dieser Befehl startet GeoServer innerhalb eines Docker Containers auf Port 8080 eures Systems. Falls Port 8080 bei dir bereits belegt sein sollte, dann verändere einfach die Portnummer im docker run Befehl. 
+ 
+
+Nachdem wir GeoServer über Docker gestartet haben, können wir auf das Web-Interface zugreifen, indem wir in unserem Webbrowser "http://localhost:8080/geoserver" in die Suchleiste eingeben. 
+ 
+Wir gelangen auf die Startseite unseres Geoservers. Diese scheint zunächst wenig aussagekräftig zu sein und es gibt nur eingeschränkte Einstellungsmöglichkeiten.
+ 
+Dies ändert sich, wenn man sich im oberen Teil der Seite anmeldet. Verwende hier die Standardanmeldeinformationen. Also "admin" als Benutzername und "geoserver" als Passwort.
+ 
+Sobald man angemeldet ist, sieht man die Startseite des GeoServer Web Interface. Hier können wir nun auf verschiedene Funktionen und Einstellungen zugreifen.
+ 
+Kurz zur Übersicht: 
+ 
+Arbeitsbereiche dienen in GeoServer als eine Art Container für Ressourcen wie Layer, Stile, Datenspeicher und grundlegende Einstellungen. Ein Arbeitsbereich kann als eine Art Namensraum für Ressourcen betrachtet werden, die innerhalb dieses Namensraumes eindeutig identifiziert werden können. Arbeitsbereiche werden verwendet, um verschiedene Projekte innerhalb einer GeoServer-Installation zu organisieren.
+ 
+Ein Datenspeicher ist eine Schnittstelle zu einer bestimmten Art von Geodatenquelle. Ein Datenspeicher kann beispielsweise eine Verbindung zu einem PostGIS-Datenbankserver, einem Shapefile-Ordner oder einem WMS-Server sein. Es gibt verschiedene Arten von Datenspeichern in GeoServer, je nach Art der Datenquelle, die man verwenden will. 
+ 
+Ein Layer repräsentiert einen bestimmten Geodatensatz, der über WebServices abgerufen werden kann und in einer bestimmten Art und Weise dargestellt wird. 
+ 
+Die Stile beschreiben diese Darstellung, indem die passenden Symbolisierungen den einzelnen Layern zugeordnet werden. 
+ 
+ 
+GeoServer kommt mit einer Reihe von Beispieldatensätzen, die bereits in Arbeitsbereichen, Datenspeichern und Layern organisiert sind. Um die Übersichtlichkeit zu erhöhen, werden wir die vorhandenen Beispieldatensätze zunächst löschen und anschließend einen der Arbeitsbereiche rekonstruieren. 
+ 
+Die effektivste Art, einen GeoServer zu bereinigen, ist das Löschen von Arbeitsbereichen. Wird ein Arbeitsbereich gelöscht, so werden alle darin enthaltenen Datenspeicher und Layer automatisch vom Server enfernt. Lediglich die Stile bleiben erhalten und müssen zusätzlich gelöscht werden.
+ 
+Starten wir also mit unserer technischen Übung und navigieren zuerst zu dem Reiter „Arbeitsbereiche“, setzen ein Häkchen, sodass alles markiert wird und wählen „Ausgewählte Arbeitsbereiche löschen“. 
+ 
+Nun sind alle bereits bestehenden Arbeitsbereiche, Datenspeicher und Layer gelöscht wurden und wir haben einen leeren GeoServer vor uns.
+ 
+Beginnen wir also damit einen neuen Arbeitsbereich und zugehörige Datenspeicher anzulegen. 
+ 
+Wir klicken auf "Arbeitsbereich hinzufügen" und vergeben einen Namen für den neuen Arbeitsbereich. Wir wählen den Namen „NewYork“. 
+ 
+Anschließend legen wir eine URI fest. Die URI kann fiktiv sein, wichtig ist nur das die äußere Form einer Webadresse eingehalten wird. Beispielsweise http://www.NewYork.com.
+ 
+Wenn ein Service nicht nur lokal veröffentlicht werden soll, sollte die URI natürlich eine gültige, von dir verwaltete Webadresse sein. Nun können wir auf "Speichern" klicken.
+ 
+Ein neues Fenster öffnet sich, indem der neue Arbeitsbereich in einer Liste erscheint. Klicke auf den neu erstellten Arbeitsbereich „NewYork“ und es erscheint eine zusätzliche Auswahl von Einstellungsmöglichkeiten. 
+ 
+Aktiviere hier die Kontrollkästchen für WMS und WFS. Damit legst du fest, dass alle in dem Arbeitsbereich enthaltenen Daten als WMS und als WFS von deinem GeoServer zur Verfügung gestellt werden. 
+ 
+Danach wechseln wir auf den Menüpunkt „Datenspeicher“ und gehen auf "Datenspeicher hinzufügen". Hier müssen wir gültige Pfade zu unseren Daten angeben, damit GeoServer später auf die Quellen zugreifen kann. 
+ 
+Uns wird eine Auswahl an möglichen Datenquellen vorgeschlagen, die verschiedene Dateitypen ansprechen. Wir müssen uns also zunächst darüber im Klaren sein, welche Dateitypen wir verknüpfen wollen. 
+ 
+In unserem Beispiel arbeiten wir ausschließlich mit Shapedateien die in einem gesammelten Ordner vorliegen. Wir können also eine sogenannte „Directory of spatial files“ nutzen, um alle Shapedateien die im gleichen Ordner liegen aufeinmal zu verknüpfen. 
+ 
+Würden die Daten in verschiedenen Ordnern liegen, dann müssten wir diese über die Datenquelle „Shapefile“ alle einzeln über separate Datenspeicher verknüpfen. 
+ 
+ 
+Wir wählen also „Directory of spatial files“ und wählen anschließend den passenden Arbeitsbereich „NewYork“ aus. 
+ 
+Außerdem vergeben wir einen passenden Namen für den Datenspeicher. In diesem Fall nennen wir ihn „Citydata“ und suchen dann den richtigen Dateipfad bei „Verbindungsparameter“ über Durchsuchen. 
+ 
+Die Daten liegen in der offiziellen Data Directory von GeoServer, zu finden unter „data“. Wir finden hier die bereitgestellten Beispieldatensätze. Möchtest du neue Datensätze einladen, dann müssen diese aber ebenfalls in der offiziellen Data Directory abgelegt werden. Den Pfad zu dem Verzeichnis kannst du über den Reiter Serverstatus einsehen. 
+ 
+Da wir in diesem Tutorial nur mit den Beispieldatensätzen arbeiten navigieren wir über „data“ in den Ordner „nyc“ und Klicken „ok“. 
+ 
+ Der Pfad wird übernommen und wir können auf "Speichern" klicken.
+ 
+Wenn wir einen neuen Datenspeicher angelegt haben, springen wir automatisch in eine Liste mit allen enthaltenen Datensätze und können diese von dort aus publizieren. 
+ 
+Verlassen wir dieses Fenster aber aus Versehen oder möchten wir nachträglich einen weiteren Layer publizieren, dann können wir über den Reiter „Layer“, und dann "Neuen Layer hinzufügen" navigieren. Wählen wir unseren Datenspeicher „Citydata“ aus landen wir wieder bei der gleichen Liste der enthaltenen Datensätze. 
+ 
+Wir wählen den Datensatz „poly_landmarks“ aus, und klicken auf Publizieren. 
+ 
+Im neuen Fenster geben wir dem Layer einen aussagekräftigeren Namen und Titel. Wir nennen den layer „Manhatten Landmarks“ und kopieren den Namen auch in das Titel-Feld. 
+ 
+Damit die Datensätze vom System auch richtig verortet werden ist es wichtig, das verwendete Koordinatensystem zu prüfen und  das Begrenzende Rechteck für den Layer festzulegen, indem du entweder die Werte manuell eingibst oder auf "Aus Daten berechnen" und „Aus den nativen Grenzen berechnen“ klickst, um sie automatisch aus den Daten auslesen zu lassen.
+ 
+Klicke anschließend auf "Speichern". 
+ 
+In der Layer-Vorschau kannst du dir nun den publizierten Layer über OpenLayers in einer Webkarte anzeigen lassen. Es fällt auf, dass die Polygonflächen 
+einfarbig erscheinen und keine Unterschiede von verschiedenen Flächen zulassen. Um dies zu ändern können wir nun passende Stile zu dem Layer hinzufügen.  
+ 
+Klicke auf den "Stile" Reiter. Hier könntest du nun Stile speziell für die 
+Neuen Layer erstellen. Stile kannst du entweder händisch über eine Konsole in css schreiben oder du kannst eine Stildatei, beispielsweise eine sld Datei aus QGIS einladen. 
+ 
+Wir nutzen in diesem Tutorial einen bereits angelegten Stil, der zu dem Datensatz passt. Wir wählen also den Stil „poly_landmarks“ und navigieren über den "Publishing" -Reiter, suchen nach dem richtigen Layer und klicken anschließend auf "Speichern“. 
+ 
+Öffnen wir in der Layer-Vorschau erneut den Layer dann können wir nun eine eindeutige Symbolisierung feststellen, die es ermöglicht die verschiedenen Flächen im Layer voneinander zu unterscheiden. 
+ 
+Diese Schritte können wir nun für die restlichen Datensätze wiederholen. Stoppe an dieser Stelle das Video und publiziere als Übung den Punkt-Datensatz „POI“ und den Linien-Datensatz „tiger_roads“. 
+ 
+Der Layer „Poi“ stellt interessante Orte und „tiger_roads“ das Straßennetz in New York da. Die passenden Symbolisierungen heißen „poi“ und „simple_road“. 
+ 
+Abschließend können wir überprüfen, ob unsere Services funktionieren. Öffne dazu QGIS und füge einen WMS-Service hinzu, indem du auf "Layer" -> "Neuer WMS-Layer" klickst. Oder in deinem Browser Fenster einen Rechtsklick auf WMS und dann Neue Verbindung hinzufügen drückst. 
+ 
+Vergebe einen Namen und gib die URL des WMS-Services ein, wähle einen Layer aus, den du hinzufügen möchtest, und ziehe diesen mit Drag and Drop in das Kartenfenster. 
+ 
+Die URL deines WMS Services findest du am einfachsten heraus, indem du über das Logo zurück auf die Startseite der Weboberfläche gehst und dort auf den gewünschten Service klickst. 
+ 
+Die URL die wir zum Verknüpfen benötigen finden wir in der Suchleiste der XML Seite. Also einfach kopieren und bei QGIS einfügen. 
+ 
+Füge nun ebenfalls einen WFS-Service hinzu, indem du auf "Layer" -> "Neuer WFS-Layer" klickst. Vergib einen Namen und gib die URL des WFS-Services ein, wähle ebenfalls einen Layer aus, den du veröffentlicht hast, und füge den Layer deinem Kartenfenster hinzu.
+ 
+Überprüfe nun, ob die Services ordnungsgemäß funktionieren, indem du auf die verschiedenen Layer klickst und sicherstellst, dass die Daten richtig angezeigt werden.
+ 
+Herzlichen Glückwunsch! Du hast erfolgreich GeoServer über Docker ausgeführt, Arbeitsbereiche und Datenspeicher erstellt, Layer veröffentlicht, Stile hinzugefügt und die Services in QGIS getestet. 
+ 
+Insgesamt ist GeoServer eine leistungsstarke und vielseitige Software, mit der du Geodaten schnell und einfach veröffentlichen und freigeben kannst. Mit ein wenig Übung und Erfahrung kannst du GeoServer verwenden, um ansprechende und informative Karten und Geodatenanwendungen zu erstellen.
