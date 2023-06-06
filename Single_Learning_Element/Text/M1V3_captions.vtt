@@ -1,0 +1,605 @@
+WEBVTT
+Kind: captions
+Language: de
+
+00:00:00.530 --> 00:00:01.689
+Hallo und herzlich willkommen.
+
+00:00:01.689 --> 00:00:06.930
+In diesem Screencast werden wir die freie
+Software GeoServer über Docker installieren,
+
+00:00:06.930 --> 00:00:12.160
+ausführen und selbst einen Web Map- und Web
+Feature Service einrichten.
+
+00:00:12.160 --> 00:00:16.890
+Ich werde dich durch den Prozess führen,
+wie du Arbeitsbereiche und Datenspeicher erstellst,
+
+00:00:16.890 --> 00:00:21.950
+Layer veröffentlichst, Stile hinzufügst
+und die Services in QGIS überprüfst.
+
+00:00:21.950 --> 00:00:27.109
+Stelle bitte zunächst sicher, dass du Docker
+einsatzbereit auf deinem System installiert
+
+00:00:27.109 --> 00:00:29.759
+und gestartet hast, dann können wir loslegen.
+
+00:00:29.759 --> 00:00:34.860
+Der erste Schritt besteht darin, GeoServer
+über Docker zu starten.
+
+00:00:34.860 --> 00:00:40.309
+Dazu öffnen wir die Kommandozeile oder unser
+Terminal und geben den ersten Befehl „docker
+
+00:00:40.309 --> 00:00:44.469
+pull“ ein, um GeoServer von Docker herunterzuladen.
+
+00:00:44.469 --> 00:00:48.660
+Kopiere am besten den gesamten Befehl aus
+dem Kurs , um Rechtschreibfehler zu vermeiden.
+
+00:00:48.660 --> 00:00:54.980
+Du kannst gerne die Versionsnummer 2.22 austauschen,
+falls du eine neuere Version von GeoServer
+
+00:00:54.980 --> 00:00:55.980
+nutzen möchtest.
+
+00:00:55.980 --> 00:01:00.970
+Der Ladevorgang kann einige Minuten in Anspruch
+nehmen.
+
+00:01:00.970 --> 00:01:07.180
+Wenn der Vorgang abgeschlossen ist, dann gib
+den Befehl „docker run“ ein, um GeoServer
+
+00:01:07.180 --> 00:01:08.250
+auszuführen.
+
+00:01:08.250 --> 00:01:12.759
+Kopiere gerne wieder den gesamten Befehl,
+um Flüchtigkeitsfehler zu vermeiden.
+
+00:01:12.759 --> 00:01:18.070
+Dieser Befehl startet GeoServer innerhalb
+eines Docker Containers auf Port 8080 eures
+
+00:01:18.070 --> 00:01:19.070
+Systems.
+
+00:01:19.070 --> 00:01:23.960
+Falls Port 8080 bei dir bereits belegt sein
+sollte, dann verändere einfach die Portnummer
+
+00:01:23.960 --> 00:01:25.010
+im docker run Befehl.
+
+00:01:25.010 --> 00:01:40.870
+Nachdem wir GeoServer über Docker gestartet
+haben, können wir auf das Web-Interface zugreifen,
+
+00:01:40.870 --> 00:01:48.810
+indem wir in unserem Webbrowser "http://localhost:8080/geoserver"
+in die Suchleiste eingeben.
+
+00:01:48.810 --> 00:01:55.250
+Wir gelangen auf die Startseite unseres Geoservers.
+
+00:01:55.250 --> 00:02:01.710
+Diese scheint zunächst wenig aussagekräftig
+zu sein und es gibt nur eingeschränkte Einstellungsmöglichkeiten.
+
+00:02:01.710 --> 00:02:05.030
+Dies ändert sich, wenn man sich im oberen
+Teil der Seite anmeldet.
+
+00:02:05.030 --> 00:02:07.189
+Verwende hier die Standardanmeldeinformationen.
+
+00:02:07.189 --> 00:02:12.200
+Also "admin" als Benutzername und "geoserver"
+als Passwort.
+
+00:02:12.200 --> 00:02:16.100
+Sobald man angemeldet ist, sieht man die Startseite
+des GeoServer Web Interface.
+
+00:02:16.100 --> 00:02:18.960
+Hier können wir nun auf verschiedene Funktionen
+und Einstellungen zugreifen.
+
+00:02:18.960 --> 00:02:19.960
+Kurz zur Übersicht:
+
+00:02:19.960 --> 00:02:26.070
+Arbeitsbereiche dienen in GeoServer als eine
+Art Container für Ressourcen wie Layer, Stile,
+
+00:02:26.070 --> 00:02:28.170
+Datenspeicher und grundlegende Einstellungen.
+
+00:02:28.170 --> 00:02:34.280
+Ein Arbeitsbereich kann als eine Art Namensraum
+für Ressourcen betrachtet werden, die innerhalb
+
+00:02:34.280 --> 00:02:37.140
+dieses Namensraumes eindeutig identifiziert
+werden können.
+
+00:02:37.140 --> 00:02:42.610
+Arbeitsbereiche werden verwendet, um verschiedene
+Projekte innerhalb einer GeoServer-Installation
+
+00:02:42.610 --> 00:02:43.610
+zu organisieren.
+
+00:02:43.610 --> 00:02:50.120
+Ein Datenspeicher ist eine Schnittstelle zu
+einer bestimmten Art von Geodatenquelle.
+
+00:02:50.120 --> 00:02:53.950
+Ein Datenspeicher kann beispielsweise eine
+Verbindung zu einem PostGIS-Datenbankserver,
+
+00:02:53.950 --> 00:02:57.849
+einem Shapefile-Ordner oder einem WMS-Server
+sein.
+
+00:02:57.849 --> 00:03:03.020
+Es gibt verschiedene Arten von Datenspeichern
+in GeoServer, je nach Art der Datenquelle,
+
+00:03:03.020 --> 00:03:04.860
+die man verwenden will.
+
+00:03:04.860 --> 00:03:09.220
+Ein Layer repräsentiert einen bestimmten
+Geodatensatz, der über WebServices abgerufen
+
+00:03:09.220 --> 00:03:12.650
+werden kann und in einer bestimmten Art und
+Weise dargestellt wird.
+
+00:03:12.650 --> 00:03:18.390
+Die Stile beschreiben diese Darstellung, indem
+die passenden Symbolisierungen den einzelnen
+
+00:03:18.390 --> 00:03:19.470
+Layern zugeordnet werden.
+
+00:03:19.470 --> 00:03:26.190
+GeoServer kommt mit einer Reihe von Beispieldatensätzen,
+die bereits in Arbeitsbereichen, Datenspeichern
+
+00:03:26.190 --> 00:03:27.980
+und Layern organisiert sind.
+
+00:03:27.980 --> 00:03:32.550
+Um die Übersichtlichkeit zu erhöhen, werden
+wir die vorhandenen Beispieldatensätze zunächst
+
+00:03:32.550 --> 00:03:36.019
+löschen und anschließend einen der Arbeitsbereiche
+rekonstruieren.
+
+00:03:36.019 --> 00:03:41.540
+Die effektivste Art, einen GeoServer zu bereinigen,
+ist das Löschen von Arbeitsbereichen.
+
+00:03:41.540 --> 00:03:46.010
+Wird ein Arbeitsbereich gelöscht, so werden
+alle darin enthaltenen Datenspeicher und Layer
+
+00:03:46.010 --> 00:03:48.190
+automatisch vom Server enfernt.
+
+00:03:48.190 --> 00:03:53.250
+Lediglich die Stile bleiben erhalten und müssen
+zusätzlich gelöscht werden.
+
+00:03:53.250 --> 00:03:58.739
+Starten wir also mit unserer technischen Übung
+und navigieren zuerst zu dem Reiter „Arbeitsbereiche“,
+
+00:03:58.739 --> 00:04:03.099
+setzen ein Häkchen, sodass alles markiert
+wird und wählen „Ausgewählte Arbeitsbereiche
+
+00:04:03.099 --> 00:04:04.099
+löschen“.
+
+00:04:04.099 --> 00:04:09.330
+Nun sind alle bereits bestehenden Arbeitsbereiche,
+Datenspeicher und Layer gelöscht wurden und
+
+00:04:09.330 --> 00:04:11.959
+wir haben einen leeren GeoServer vor uns.
+
+00:04:11.959 --> 00:04:16.570
+Beginnen wir also damit einen neuen Arbeitsbereich
+und zugehörige Datenspeicher anzulegen.
+
+00:04:16.570 --> 00:04:23.080
+Wir klicken auf "Arbeitsbereich hinzufügen"
+und vergeben einen Namen für den neuen Arbeitsbereich.
+
+00:04:23.080 --> 00:04:26.460
+Wir wählen den Namen „NewYork“.
+
+00:04:26.460 --> 00:04:29.630
+Anschließend legen wir eine URI fest.
+
+00:04:29.630 --> 00:04:35.450
+Die URI kann fiktiv sein, wichtig ist nur
+das die äußere Form einer Webadresse eingehalten
+
+00:04:35.450 --> 00:04:37.110
+wird.
+
+00:04:37.110 --> 00:04:40.450
+Beispielsweise http://www.NewYork.com.
+
+00:04:40.450 --> 00:04:47.820
+Wenn ein Service nicht nur lokal veröffentlicht
+werden soll, sollte die URI natürlich eine
+
+00:04:47.820 --> 00:04:50.410
+gültige, von dir verwaltete Webadresse sein.
+
+00:04:50.410 --> 00:04:53.380
+Nun können wir auf "Speichern" klicken.
+
+00:04:53.380 --> 00:04:59.000
+Ein neues Fenster öffnet sich, indem der
+neue Arbeitsbereich in einer Liste erscheint.
+
+00:04:59.000 --> 00:05:03.330
+Klicke auf den neu erstellten Arbeitsbereich
+„NewYork“ und es erscheint eine zusätzliche
+
+00:05:03.330 --> 00:05:05.440
+Auswahl von Einstellungsmöglichkeiten.
+
+00:05:05.440 --> 00:05:13.131
+Aktiviere hier die Kontrollkästchen für
+WMS und WFS. Damit legst du fest, dass alle
+
+00:05:13.131 --> 00:05:18.419
+in dem Arbeitsbereich enthaltenen Daten als
+WMS und als WFS von deinem GeoServer zur Verfügung
+
+00:05:18.419 --> 00:05:21.160
+gestellt werden.
+
+00:05:21.160 --> 00:05:26.280
+Danach wechseln wir auf den Menüpunkt „Datenspeicher“
+und gehen auf "Datenspeicher hinzufügen".
+
+00:05:26.280 --> 00:05:31.090
+Hier müssen wir gültige Pfade zu unseren
+Daten angeben, damit GeoServer später auf
+
+00:05:31.090 --> 00:05:32.389
+die Quellen zugreifen kann.
+
+00:05:32.389 --> 00:05:37.949
+Uns wird eine Auswahl an möglichen Datenquellen
+vorgeschlagen, die verschiedene Dateitypen
+
+00:05:37.949 --> 00:05:38.949
+ansprechen.
+
+00:05:38.949 --> 00:05:43.940
+Wir müssen uns also zunächst darüber im
+Klaren sein, welche Dateitypen wir verknüpfen
+
+00:05:43.940 --> 00:05:44.940
+wollen.
+
+00:05:44.940 --> 00:05:49.500
+In unserem Beispiel arbeiten wir ausschließlich
+mit Shapedateien die in einem gesammelten
+
+00:05:49.500 --> 00:05:50.620
+Ordner vorliegen.
+
+00:05:50.620 --> 00:05:55.460
+Wir können also eine sogenannte „Directory
+of spatial files“ nutzen, um alle Shapedateien
+
+00:05:55.460 --> 00:05:58.380
+die im gleichen Ordner liegen aufeinmal zu
+verknüpfen.
+
+00:05:58.380 --> 00:06:03.360
+Würden die Daten in verschiedenen Ordnern
+liegen, dann müssten wir diese über die
+
+00:06:03.360 --> 00:06:08.030
+Datenquelle „Shapefile“ alle einzeln über
+separate Datenspeicher verknüpfen.
+
+00:06:08.030 --> 00:06:13.580
+Wir wählen also „Directory of spatial files“
+und wählen anschließend den passenden Arbeitsbereich
+
+00:06:13.580 --> 00:06:15.360
+„NewYork“ aus.
+
+00:06:15.360 --> 00:06:18.470
+Außerdem vergeben wir einen passenden Namen
+für den Datenspeicher.
+
+00:06:18.470 --> 00:06:23.720
+In diesem Fall nennen wir ihn „Citydata“
+und suchen dann den richtigen Dateipfad bei
+
+00:06:23.720 --> 00:06:26.410
+„Verbindungsparameter“ über Durchsuchen.
+
+00:06:26.410 --> 00:06:32.800
+Die Daten liegen in der offiziellen Data Directory
+von GeoServer, zu finden unter „data“.
+
+00:06:32.800 --> 00:06:37.599
+Wir finden hier die bereitgestellten Beispieldatensätze.
+
+00:06:37.599 --> 00:06:41.639
+Möchtest du neue Datensätze einladen, dann
+müssen diese aber ebenfalls in der offiziellen
+
+00:06:41.639 --> 00:06:43.610
+Data Directory abgelegt werden.
+
+00:06:43.610 --> 00:06:47.220
+Den Pfad zu dem Verzeichnis kannst du über
+den Reiter Serverstatus einsehen.
+
+00:06:47.220 --> 00:06:53.590
+Da wir in diesem Tutorial nur mit den Beispieldatensätzen
+arbeiten navigieren wir über „data“ in
+
+00:06:53.590 --> 00:06:56.200
+den Ordner „nyc“ und Klicken „ok“.
+
+00:06:56.200 --> 00:07:00.970
+Der Pfad wird übernommen und wir können
+auf "Speichern" klicken.
+
+00:07:00.970 --> 00:07:06.259
+Wenn wir einen neuen Datenspeicher angelegt
+haben, springen wir automatisch in eine Liste
+
+00:07:06.259 --> 00:07:11.979
+mit allen enthaltenen Datensätze und können
+diese von dort aus publizieren.
+
+00:07:11.979 --> 00:07:15.289
+Verlassen wir dieses Fenster aber aus Versehen
+oder möchten wir nachträglich einen weiteren
+
+00:07:15.289 --> 00:07:19.639
+Layer publizieren, dann können wir über
+den Reiter „Layer“, und dann "Neuen Layer
+
+00:07:19.639 --> 00:07:20.830
+hinzufügen" navigieren.
+
+00:07:20.830 --> 00:07:26.040
+Wählen wir unseren Datenspeicher „Citydata“
+aus landen wir wieder bei der gleichen Liste
+
+00:07:26.040 --> 00:07:28.639
+der enthaltenen Datensätze.
+
+00:07:28.639 --> 00:07:34.039
+Wir wählen den Datensatz „poly_landmarks“
+aus, und klicken auf Publizieren.
+
+00:07:34.039 --> 00:07:37.770
+Im neuen Fenster geben wir dem Layer einen
+aussagekräftigeren Namen und Titel.
+
+00:07:37.770 --> 00:07:43.860
+Wir nennen den layer „Manhatten Landmarks“
+und kopieren den Namen auch in das Titel-Feld.
+
+00:07:43.860 --> 00:07:48.889
+Damit die Datensätze vom System auch richtig
+verortet werden ist es wichtig, das verwendete
+
+00:07:48.889 --> 00:07:54.289
+Koordinatensystem zu prüfen und das Begrenzende
+Rechteck für den Layer festzulegen, indem
+
+00:07:54.289 --> 00:07:59.979
+du entweder die Werte manuell eingibst oder
+auf "Aus Daten berechnen" und „Aus den nativen
+
+00:07:59.979 --> 00:08:05.050
+Grenzen berechnen“ klickst, um sie automatisch
+aus den Daten auslesen zu lassen.
+
+00:08:05.050 --> 00:08:07.669
+Klicke anschließend auf "Speichern".
+
+00:08:07.669 --> 00:08:12.600
+In der Layer-Vorschau kannst du dir nun den
+publizierten Layer über OpenLayers in einer
+
+00:08:12.600 --> 00:08:15.340
+Webkarte anzeigen lassen.
+
+00:08:15.340 --> 00:08:19.169
+Es fällt auf, dass die Polygonflächen
+einfarbig erscheinen und keine Unterschiede
+
+00:08:19.169 --> 00:08:20.699
+von verschiedenen Flächen zulassen.
+
+00:08:20.699 --> 00:08:26.520
+Um dies zu ändern können wir nun passende
+Stile zu dem Layer hinzufügen.
+
+00:08:26.520 --> 00:08:28.569
+Klicke auf den "Stile" Reiter.
+
+00:08:28.569 --> 00:08:30.840
+Hier könntest du nun Stile speziell für
+die
+
+00:08:30.840 --> 00:08:32.510
+Neuen Layer erstellen.
+
+00:08:32.510 --> 00:08:37.850
+Stile kannst du entweder händisch über eine
+Konsole in css schreiben oder du kannst eine
+
+00:08:37.850 --> 00:08:42.930
+Stildatei, beispielsweise eine sld Datei aus
+QGIS einladen.
+
+00:08:42.930 --> 00:08:48.339
+Wir nutzen in diesem Tutorial einen bereits
+angelegten Stil, der zu dem Datensatz passt.
+
+00:08:48.339 --> 00:08:54.740
+Wir wählen also den Stil „poly_landmarks“
+und navigieren über den "Publishing" -Reiter,
+
+00:08:54.740 --> 00:08:58.740
+suchen nach dem richtigen Layer und klicken
+anschließend auf "Speichern“.
+
+00:08:58.740 --> 00:09:04.690
+Öffnen wir in der Layer-Vorschau erneut den
+Layer dann können wir nun eine eindeutige
+
+00:09:04.690 --> 00:09:08.800
+Symbolisierung feststellen, die es ermöglicht
+die verschiedenen Flächen im Layer voneinander
+
+00:09:08.800 --> 00:09:09.800
+zu unterscheiden.
+
+00:09:09.800 --> 00:09:15.100
+Diese Schritte können wir nun für die restlichen
+Datensätze wiederholen.
+
+00:09:15.100 --> 00:09:20.460
+Stoppe an dieser Stelle das Video und publiziere
+als Übung den Punkt-Datensatz „POI“ und
+
+00:09:20.460 --> 00:09:22.160
+den Linien-Datensatz „tiger_roads“.
+
+00:09:22.160 --> 00:09:28.290
+Der Layer „Poi“ stellt interessante Orte
+und „tiger_roads“ das Straßennetz in
+
+00:09:28.290 --> 00:09:29.290
+New York da.
+
+00:09:29.290 --> 00:09:33.480
+Die passenden Symbolisierungen heißen „poi“
+und „simple_road“.
+
+00:09:33.480 --> 00:09:39.910
+Abschließend können wir überprüfen, ob
+unsere Services funktionieren.
+
+00:09:39.910 --> 00:09:45.800
+Öffne dazu QGIS und füge einen WMS-Service
+hinzu, indem du auf "Layer" -&gt; "Neuer WMS-Layer"
+
+00:09:45.800 --> 00:09:46.800
+klickst.
+
+00:09:46.800 --> 00:09:52.730
+Oder in deinem Browser Fenster einen Rechtsklick
+auf WMS und dann Neue Verbindung hinzufügen
+
+00:09:52.730 --> 00:09:54.660
+drückst.
+
+00:09:54.660 --> 00:10:00.752
+Vergebe einen Namen und gib die URL des WMS-Services
+ein, wähle einen Layer aus, den du hinzufügen
+
+00:10:00.752 --> 00:10:04.190
+möchtest, und ziehe diesen mit Drag and Drop
+in das Kartenfenster.
+
+00:10:04.190 --> 00:10:09.630
+Die URL deines WMS Services findest du am
+einfachsten heraus, indem du über das Logo
+
+00:10:09.630 --> 00:10:13.769
+zurück auf die Startseite der Weboberfläche
+gehst und dort auf den gewünschten Service
+
+00:10:13.769 --> 00:10:14.769
+klickst.
+
+00:10:14.769 --> 00:10:20.310
+Die URL die wir zum Verknüpfen benötigen
+finden wir in der Suchleiste der XML Seite.
+
+00:10:20.310 --> 00:10:50.730
+Also einfach kopieren und bei QGIS einfügen.
+
+00:10:50.730 --> 00:10:56.370
+Füge nun ebenfalls einen WFS-Service hinzu,
+indem du auf "Layer" -&gt; "Neuer WFS-Layer"
+
+00:10:56.370 --> 00:10:57.370
+klickst.
+
+00:10:57.370 --> 00:11:17.860
+Vergib einen Namen und gib die URL des WFS-Services
+ein, wähle ebenfalls einen Layer aus, den
+
+00:11:17.860 --> 00:11:26.240
+du veröffentlicht hast, und füge den Layer
+deinem Kartenfenster hinzu.
+
+00:11:26.240 --> 00:11:33.360
+Überprüfe nun, ob die Services ordnungsgemäß
+funktionieren, indem du auf die verschiedenen
+
+00:11:33.360 --> 00:11:37.720
+Layer klickst und sicherstellst, dass die
+Daten richtig angezeigt werden.
+
+00:11:37.720 --> 00:11:39.010
+Herzlichen Glückwunsch!
+
+00:11:39.010 --> 00:11:42.850
+Du hast erfolgreich GeoServer über Docker
+ausgeführt, Arbeitsbereiche und Datenspeicher
+
+00:11:42.850 --> 00:11:48.040
+erstellt, Layer veröffentlicht, Stile hinzugefügt
+und die Services in QGIS getestet.
+
+00:11:48.040 --> 00:11:53.480
+Insgesamt ist GeoServer eine leistungsstarke
+und vielseitige Software, mit der du Geodaten
+
+00:11:53.480 --> 00:11:56.100
+schnell und einfach veröffentlichen und freigeben
+kannst.
+
+00:11:56.100 --> 00:12:00.660
+Mit ein wenig Übung und Erfahrung kannst
+du GeoServer verwenden, um ansprechende und
+
+00:12:00.660 --> 00:12:03.870
+informative Karten und Geodatenanwendungen
+zu erstellen.
+

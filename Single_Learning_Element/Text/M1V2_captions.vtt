@@ -1,0 +1,333 @@
+WEBVTT
+Kind: captions
+Language: de-DE
+
+00:00:00.000 --> 00:00:03.540
+Hallo und herzlich willkommen. In&nbsp;
+diesem Screencast beschäftigen wir&nbsp;&nbsp;
+
+00:00:03.540 --> 00:00:08.700
+uns mit dem Thema "Geospatial Web Services".
+Hierzu werden wir uns einige Beispiele für&nbsp;&nbsp;
+
+00:00:08.700 --> 00:00:13.740
+Web Map - und Web Feature Services ansehen und&nbsp;
+diese in ein einfaches QGIS-Projekt integrieren.&nbsp;
+
+00:00:13.740 --> 00:00:17.100
+Bevor wir jedoch mit der&nbsp;
+Integration in QGIS beginnen,&nbsp;&nbsp;
+
+00:00:17.100 --> 00:00:22.020
+wollen wir uns zunächst Webseiten ansehen, auf&nbsp;
+denen wir potenzielle Services finden können.&nbsp;
+
+00:00:23.220 --> 00:00:27.000
+Eine vertrauenswürdige Quelle&nbsp;
+für Geospatial Web Services ist&nbsp;&nbsp;
+
+00:00:27.000 --> 00:00:33.000
+beispielsweise der Geodatenkatalog Deutschland
+Der Geodatenkatalog Deutschland ist ein zentraler&nbsp;&nbsp;
+
+00:00:33.000 --> 00:00:38.460
+Katalog für geografische Daten auf deutschem&nbsp;
+Hoheitsgebiet. Er bietet eine umfassende Sammlung&nbsp;&nbsp;
+
+00:00:38.460 --> 00:00:42.780
+von Geodaten, die von verschiedenen Behörden&nbsp;
+und Organisationen bereitgestellt werden.&nbsp;
+
+00:00:44.280 --> 00:00:47.160
+Der Geodatenkatalog wird&nbsp;
+von der Arbeitsgemeinschaft&nbsp;&nbsp;
+
+00:00:47.160 --> 00:00:52.080
+der Vermessungsverwaltungen der Länder der&nbsp;
+Bundesrepublik Deutschland (AdV) betrieben.&nbsp;&nbsp;
+
+00:00:53.220 --> 00:00:57.780
+Er hat das Ziel, den Zugang zu geografischen&nbsp;
+Daten zu erleichtern und die Verbreitung und&nbsp;&nbsp;
+
+00:00:57.780 --> 00:01:03.900
+Nutzung von Geodaten in Deutschland zu fördern.
+Über die Suchfunktion oder die vorgeschlagenen&nbsp;&nbsp;
+
+00:01:03.900 --> 00:01:07.920
+Themenbereiche können sehr einfach&nbsp;
+Services zu Datensätzen gefunden werden.&nbsp;
+
+00:01:09.420 --> 00:01:14.880
+Zu den zentralen Themenbereichen gehören die&nbsp;
+geographischen Basisdaten, mit topografischen&nbsp;&nbsp;
+
+00:01:14.880 --> 00:01:20.760
+Karten, digitalen Geländemodellen, Luft- und&nbsp;
+Satellitenbildern. Daten der Verwaltung mit&nbsp;&nbsp;
+
+00:01:20.760 --> 00:01:26.760
+Informationen zu den administrativen Einheiten.&nbsp;
+Daten zur Umwelt und Natur, zum Verkehr und&nbsp;&nbsp;
+
+00:01:26.760 --> 00:01:31.800
+der Infrastruktur, sowie Geodaten die für die&nbsp;
+Planung und das Bauwesen relevant sein können.&nbsp;
+
+00:01:33.600 --> 00:01:38.160
+Der Geodatenkatalog Deutschland ermöglicht&nbsp;
+es, nach geografischen Daten zu suchen,&nbsp;&nbsp;
+
+00:01:38.160 --> 00:01:42.660
+Metadaten zu den einzelnen Datensätzen&nbsp;
+einzusehen und die Daten herunterzuladen.&nbsp;&nbsp;
+
+00:01:42.660 --> 00:01:46.320
+Er bietet auch einen Überblick&nbsp;
+über die Datenhaltenden Stellen,&nbsp;&nbsp;
+
+00:01:46.320 --> 00:01:49.860
+also die Organisationen, die die&nbsp;
+jeweiligen Daten bereitstellen.&nbsp;
+
+00:01:51.600 --> 00:01:55.320
+Häufig können die Daten direkt im Browser&nbsp;
+in einer Webkarte aufgerufen werden,&nbsp;&nbsp;
+
+00:01:55.320 --> 00:01:58.860
+um sich einen ersten Eindruck über&nbsp;
+Inhalt und Ausdehnung machen zu können.&nbsp;
+
+00:02:01.200 --> 00:02:05.640
+In der Datenbeschreibung sind neben einer&nbsp;
+kurzen Zusammenfassung der Inhalte die für&nbsp;&nbsp;
+
+00:02:05.640 --> 00:02:09.840
+die Verknüpfung notwendigen URLs zu den&nbsp;
+Web Services übersichtlich aufgelistet.&nbsp;
+
+00:02:11.760 --> 00:02:16.080
+Ähnlich verhält es sich mit dem Geoportal&nbsp;
+Deutschland, das ebenfalls zahlreiche&nbsp;&nbsp;
+
+00:02:16.080 --> 00:02:21.060
+Dienste für Datensätze aus Deutschland anbietet.&nbsp;
+Allerdings handelt es sich bei den angebotenen&nbsp;&nbsp;
+
+00:02:21.060 --> 00:02:26.280
+Datensätzen weniger um kleine Einzelprodukte,&nbsp;
+sondern in der Regel um großflächige,&nbsp;&nbsp;
+
+00:02:26.280 --> 00:02:31.740
+bereits aufbereitete Produkte, die in ihrer&nbsp;
+Ausdehnung oft das gesamte Bundesgebiet abdecken.&nbsp;
+
+00:02:33.120 --> 00:02:36.660
+Das Geoportal Deutschland wird&nbsp;
+vom Bundesamt für Kartographie&nbsp;&nbsp;
+
+00:02:36.660 --> 00:02:41.820
+und Geodäsie (BKG) betrieben und dient&nbsp;
+ebenfalls als zentrale Anlaufstelle&nbsp;&nbsp;
+
+00:02:41.820 --> 00:02:44.220
+für Geodaten verschiedener&nbsp;
+Behörden und Organisationen.&nbsp;
+
+00:02:45.540 --> 00:02:50.700
+Das Geoportal ermöglicht es Benutzern, nach&nbsp;
+spezifischen Geodaten zu suchen. Sie können&nbsp;&nbsp;
+
+00:02:50.700 --> 00:02:56.220
+nach Orten, Themen, Datentypen und weiteren&nbsp;
+Kriterien suchen, um relevante Daten zu finden.&nbsp;
+
+00:02:57.960 --> 00:03:02.400
+Außerdem ermöglicht es die Anzeige und&nbsp;
+Interaktion mit geografischen Daten auf&nbsp;&nbsp;
+
+00:03:02.400 --> 00:03:06.360
+interaktiven Karten. Benutzer können&nbsp;
+verschiedene Kartenthemen anzeigen,&nbsp;&nbsp;
+
+00:03:06.360 --> 00:03:09.780
+Ebenen ein- und ausblenden&nbsp;
+und die Darstellung anpassen.&nbsp;
+
+00:03:11.460 --> 00:03:15.840
+Über das Ausrufezeichen an den Themenkacheln&nbsp;
+gelangen wir zu einer Informationsseite,&nbsp;&nbsp;
+
+00:03:15.840 --> 00:03:19.380
+die entweder direkt eine URL zu den&nbsp;
+angebotenen Services bereithält,&nbsp;&nbsp;
+
+00:03:19.380 --> 00:03:25.140
+oder aber auf die richtige Seite verweist.&nbsp;
+Das Geoportal unterstützt also ebenfalls&nbsp;&nbsp;
+
+00:03:25.140 --> 00:03:30.720
+den Zugriff auf Geodaten über verschiedene&nbsp;
+Standards und Protokolle wie (WMS) und (WFS).&nbsp;
+
+00:03:31.740 --> 00:03:36.180
+Auch im Ausland gibt es einige gut&nbsp;
+organisierte Geodatenkataloge. Ein&nbsp;&nbsp;
+
+00:03:36.180 --> 00:03:41.460
+gutes Beispiel dafür ist der Geodatenkatalog der&nbsp;
+Schweiz, sucht man also ausländische Services,&nbsp;&nbsp;
+
+00:03:41.460 --> 00:03:46.200
+kommt man häufig nicht drum herum auch auf&nbsp;
+internationalen Webseiten nach diesen zu suchen.&nbsp;
+
+00:03:47.340 --> 00:03:51.300
+Für unser Beispiel möchten wir einen&nbsp;
+WMS-Service von Basemap.de nutzen,&nbsp;&nbsp;
+
+00:03:51.300 --> 00:03:54.060
+der verschiedene topographische&nbsp;
+Karten für Deutschland bereitstellt.&nbsp;
+
+00:03:54.060 --> 00:03:58.740
+Sowie einen "Web Feature Service (WFS)" des&nbsp;
+Bundesamts für Kartographie und Geodäsie,&nbsp;&nbsp;
+
+00:03:58.740 --> 00:04:02.880
+der geographische Informationen wie&nbsp;
+Verwaltungsgrenzen, Flächennutzung&nbsp;&nbsp;
+
+00:04:02.880 --> 00:04:10.740
+und Geodätische Referenzsysteme bereitstellt.
+Als konkreten Service wählen wir den "WFS VG2500",&nbsp;&nbsp;
+
+00:04:10.740 --> 00:04:13.380
+der Verwaltungsgrenzen für&nbsp;
+Deutschland bereitstellt.&nbsp;
+
+00:04:14.700 --> 00:04:21.780
+Kurz zur Wiederholung: Ein WMS (Web Map Service)&nbsp;
+ist ein Service, der Kartenbilder in Echtzeit&nbsp;&nbsp;
+
+00:04:21.780 --> 00:04:27.240
+generiert und diese als Rasterbilder&nbsp;
+(z.B. PNG oder JPEG) zurückliefert.&nbsp;
+
+00:04:27.240 --> 00:04:34.860
+Ein WFS (Web Feature Service) hingegen liefert&nbsp;
+vektorbasierte geographische Informationen,&nbsp;&nbsp;
+
+00:04:34.860 --> 00:04:40.080
+wie z.B. Punkte, Linien oder Polygone,&nbsp;
+zurück. Diese können dann ebenfalls in&nbsp;&nbsp;
+
+00:04:40.080 --> 00:04:43.860
+Anwendungen angezeigt werden, können darüber&nbsp;
+hinaus aber auch weiterverarbeitet werden.&nbsp;
+
+00:04:45.420 --> 00:04:50.820
+Beginnen wir also mit der Integration der&nbsp;
+Services. Dazu öffnen wir zunächst QGIS und&nbsp;&nbsp;
+
+00:04:50.820 --> 00:04:55.080
+er-stellen ein neues Projekt.
+Anschließend fügen wir über den&nbsp;&nbsp;
+
+00:04:55.080 --> 00:05:02.520
+Menüpunkt "Layer" -&gt; "Add Layer" -&gt; "Add&nbsp;
+WMS/WMTS Layer" den WMS-Service hinzu.&nbsp;
+
+00:05:03.960 --> 00:05:09.000
+Hierbei müssen wir lediglich einen Namen&nbsp;
+festlegen und die URL des Services eingeben.&nbsp;&nbsp;
+
+00:05:10.140 --> 00:05:13.440
+anschließend können wir aus einer&nbsp;
+Liste von verfügbaren Layern auswählen.&nbsp;
+
+00:05:13.440 --> 00:05:20.400
+Wir wählen hier beispielsweise die Basemap "Raster&nbsp;
+Farbe" aus und ziehen diese in das Layerfenster.&nbsp;
+
+00:05:22.920 --> 00:05:25.140
+Als nächstes fügen wir über den Menüpunkt&nbsp;&nbsp;
+
+00:05:25.140 --> 00:05:29.640
+"Layer" -&gt; "Add Layer" -&gt; "Add&nbsp;
+WFS Layer" den WFS-Service hinzu.&nbsp;
+
+00:05:29.640 --> 00:05:35.880
+Hierbei müssen wir ebenfalls lediglich einen&nbsp;
+Namen vergeben und die URL des Services eingeben.&nbsp;&nbsp;
+
+00:05:36.840 --> 00:05:40.020
+Danach können wir wieder aus einer&nbsp;
+Liste von verfügbaren Layern auswählen.&nbsp;
+
+00:05:48.960 --> 00:05:51.240
+Wir wählen hier den Layer "Bundesländer" aus,&nbsp;&nbsp;
+
+00:05:51.240 --> 00:05:54.840
+der die Verwaltungsgrenzen der&nbsp;
+deutschen Bundesländer enthält.&nbsp;
+
+00:05:56.820 --> 00:06:01.920
+Mit einem WFS-Service können wir verschiedene&nbsp;
+Aktionen durchführen, die mit einem WMS-Service&nbsp;&nbsp;
+
+00:06:01.920 --> 00:06:06.720
+nicht möglich sind. Zum Beispiel können wir die&nbsp;
+Daten aus dem WFS-Service in QGIS bearbeiten,&nbsp;&nbsp;
+
+00:06:06.720 --> 00:06:13.920
+analysieren und modifizieren, um neue Erkenntnisse&nbsp;
+zu gewinnen oder neue Karten zu erstellen. Wir&nbsp;&nbsp;
+
+00:06:13.920 --> 00:06:18.900
+können auch komplexe Abfragen durchführen, um nur&nbsp;
+bestimmte Daten auszuwählen und zu visualisieren.&nbsp;
+
+00:06:20.100 --> 00:06:24.720
+Ein weiterer Vorteil von einem WFS-Service&nbsp;
+ist, dass er in der Lage ist, aktualisierte&nbsp;&nbsp;
+
+00:06:24.720 --> 00:06:29.160
+Daten bereitzustellen, während ein&nbsp;
+WMS-Service lediglich statische&nbsp;&nbsp;
+
+00:06:29.160 --> 00:06:33.360
+Kartenbilder liefert. Wenn die Daten in&nbsp;
+der WFS-Datenbank aktualisiert werden,&nbsp;&nbsp;
+
+00:06:33.360 --> 00:06:37.080
+können wir die Änderungen sofort im&nbsp;
+QGIS-Projekt sehen und darauf reagieren.&nbsp;
+
+00:06:38.760 --> 00:06:43.675
+Zusammenfassend bietet der Einsatz von WMS-&nbsp;
+und WFS-Services in QGIS eine leistungs-starke&nbsp;&nbsp;
+
+00:06:43.675 --> 00:06:46.218
+Möglichkeit, um Geodaten anzuzeigen,&nbsp;
+zu analysieren und zu modifizieren.&nbsp;&nbsp;
+
+00:06:46.218 --> 00:06:49.380
+Mit einem WMS-Service können wir schnell und&nbsp;
+einfach Kartenbilder darstellen, während ein&nbsp;&nbsp;
+
+00:06:49.380 --> 00:06:59.160
+WFS-Service uns detaillierte Informationen&nbsp;
+über geographische Daten liefert, die wir&nbsp;&nbsp;
+
+00:06:59.160 --> 00:07:02.340
+bearbeiten und analysieren können,&nbsp;
+um neue Erkenntnisse zu gewinnen.&nbsp;
+
+00:07:04.500 --> 00:07:07.020
+Das war unser Screencast zum Thema "Integration&nbsp;&nbsp;
+
+00:07:07.020 --> 00:07:11.160
+von Geospatial Web Services in&nbsp;
+QGIS". Vielen Dank fürs Zuschauen!
+
