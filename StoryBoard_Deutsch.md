@@ -152,8 +152,7 @@ Insgesamt ist GeoServer eine leistungsstarke und vielseitige Plattform für die 
 
 **Benötigte Softwarekomponenten, die in dieser Übung verwendet werden:** 
 
-**QGIS** ist eine freie und quelloffene, plattformübergreifende Desktop-Anwendung für geografische Informationssysteme (GIS), die das Anzeigen, Bearbeiten, Drucken und Analysieren von Geodaten unterstützt. 
-(Sie können **QGIS** über die [offizielle Webseite](https://qgis.org/de/site/forusers/download.html) installieren und der dortigen Anleitung folgen)
+**QGIS** ist eine freie und quelloffene, plattformübergreifende Desktop-Anwendung für geografische Informationssysteme (GIS), die das Anzeigen, Bearbeiten, Drucken und Analysieren von Geodaten unterstützt.
 
 **Aufgabenstellung**
 
@@ -163,49 +162,53 @@ Stöbere einige Zeit auf den Webseiten der angehängten Linksammlung und prüfe 
 * [Geoportal Deutschland](https://www.geoportal.de/) 
 * [Geodatenkatalog Schweiz](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/home)
 
-Du hast nun einige Quellen kennengelernt über die du Geospatial Web Services finden kannst. Wähle im folgenden einen WMS- und einen dazu passenden WFS-Service aus und implementiere diese in ein simples QGIS Projekt. Folge dazu gerne auch dem angehängten Videoguide. 
+Du hast nun einige Quellen kennengelernt über die du Geospatial Web Services finden kannst. Wähle im folgenden die nachfolgenden Services aus und implementiere diese in ein simples QGIS Projekt. Folge dazu gerne auch dem angehängten Videoguide. 
 
-Falls ein Service mal nicht funktionieren sollte dann probiere zunächst einen anderen aus. Es kann vorkommen, dass Services vom Provider nicht mehr unterstützt werden oder Links nicht mehr aktuell sind. 
+* [Farbige Basiskarte](https://basemap.de/dienste/wms_capabilities_web_raster.xml)
+* [Deutsche Verwaltungsgrenze](https://sgx.geodatenzentrum.de/wfs_vg2500) 
 
-**Inhalt des Videoguides**
+Es kann vorkommen, dass Services vom Provider nicht mehr unterstützt werden oder Links nicht mehr aktuell sind. Falls ein Service mal nicht funktionieren sollte dann such dir auf den angegebenen Webseiten gerne andere Services für die Übung heraus und nutze diese nach dem gleichen Schema.
 
-Das Skript zum Videoguide findest du [hier](https://github.com/oer4sdi/Geospatial-Web-Services/blob/main/Single_Learning_Element/Text/Skript%20Videoguide%201%20Modul%201.docx) 
+**Skript zum Videoguide**
 
-Das Vollständige Video findest du [hier](https://github.com/oer4sdi/Geospatial-Web-Services/tree/main/Single_Learning_Element/Video) 
+
+
+
+
 
 ### 3.2 Übung 2
 **Benötigte Softwarekomponenten, die in dieser Übung verwendet werden:** 
 
-**QGIS** ist eine freie und quelloffene, plattformübergreifende Desktop-Anwendung für geografische Informationssysteme (GIS), die das Anzeigen, Bearbeiten, Drucken und Analysieren von Geodaten unterstützt.
+**Docker** ist eine Open-Source-Plattform, die es Entwicklern ermöglicht, Anwendungen in Containern zu erstellen, zu verteilen und auszuführen, indem sie die Isolation und Portabilität von Containern nutzt.
 
 **GeoServer** ist ein in Java geschriebener Open-Source-Server, der es Benutzern ermöglicht, Geodaten gemeinsam zu nutzen, zu verarbeiten und zu bearbeiten.
 
+**QGIS** ist eine freie und quelloffene, plattformübergreifende Desktop-Anwendung für geografische Informationssysteme (GIS), die das Anzeigen, Bearbeiten, Drucken und Analysieren von Geodaten unterstützt.
+
 **Aufgabenstellung**
 
-Lade dir die zur Verfügung gestellten Geodaten herunter und schaue dir das Folgende Video an. Deine Aufgabe besteht darin dem Screencast zu Folgen und selbst einen WMS- und einen WFS-Service Local auf deinem System zu hosten. Prüfe anschließend in QGIS ob du erfolgreich warst,  indem du die Services in ein neues QGIS-Projekt einbindest. 
+Folge dem Screencast und erstelle selbst einen WMS- und einen WFS-Service, den du Local auf deinem System hosten kannst. Prüfe anschließend in QGIS ob du erfolgreich warst,  indem du die Services in ein neues QGIS-Projekt einbindest. 
+
+Stelle sicher, dass du Docker Desktop bereits auf deinem System installiert hast und dich mit dem Programm etwas vertraut gemacht hast. Folge anschließend den ersten Schritten im Video um GeoServer über Docker zu installieren und zu starten. 
 
 Falls du dich noch tiefer mit dem Thema beschäftigen willst, dann findest du weitere Tutorials in der [offiziellen Dokumentation](https://docs.geoserver.org/) von GeoServer. 
 
-**Inhalt des Videoguides**
+**Skript zum Videoguide**
 
-Das Skript zum Videoguide findest du [hier](https://github.com/oer4sdi/Geospatial-Web-Services/blob/main/Single_Learning_Element/Text/Skript%20Videoguide%202%20Modul%201.docx) 
-
-Das Vollständige Video findest du [hier](https://github.com/oer4sdi/Geospatial-Web-Services/tree/main/Single_Learning_Element/Video) 
-
-Installation von Geoserver über Docker
-
+Starte Docker und eine Konsole (CMD) oder ein Terminal und führe die folgenden Befehle aus um GeoServer zu Downloaden:
 
 ```shell
 docker pull docker.osgeo.org/geoserver:2.22.0
 ```
-
-Ausführen des Docker Images 
+und als Container auszuführen:  
 
 ```shell
 docker run -it -p 80:8080 docker.osgeo.org/geoserver:2.22.0
 ```
 
-Check http://localhost/geoserver
+Öffne über http://localhost:8080/geoserver die Weboberfläche von GeoServer in deinem Standardbrowser. 
+
+
 
 ## 5. Quiz
 
