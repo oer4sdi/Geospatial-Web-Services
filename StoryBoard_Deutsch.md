@@ -170,9 +170,16 @@ Du hast nun einige Quellen kennengelernt über die du Geospatial Web Services fi
 Es kann vorkommen, dass Services vom Provider nicht mehr unterstützt werden oder Links nicht mehr aktuell sind. Falls ein Service mal nicht funktionieren sollte dann such dir auf den angegebenen Webseiten gerne andere Services für die Übung heraus und nutze diese nach dem gleichen Schema.
 
 **Skript zum Videoguide**
+**Webseiten mit potentiellen Services**
 
+Geodatenkatalog Deutschland
 
+Der Geodatenkatalog Deutschland präsentiert Geodaten des Bundesgebietes. Die Daten werden von verschiedenen Behörden und Organisationen bereitgestellt und von der Arbeitsgemeinschaft der Vermessungsverwaltungen der Länder der Bundesrepublik Deutschland (AdV) betreut. Grundsätzliches Ziel des Geodatenkatalogs ist es, den Zugang zu und die Verbreitung von Geodaten in Deutschland zu erleichtern und zu fördern.
+Über die Suche oder die angebotenen Themenbereiche können viele verschiedene Dienste ausgewählt werden. Zentrale Themenbereiche sind Geobasisdaten mit topographischen Karten, digitalen Geländemodellen, Luft- und Satellitenbildern, Daten der Verwaltung, Daten zu Umwelt und Natur, Verkehr und Infrastruktur sowie baurelevante Geodaten. 
+Die Hauptfunktion der Website ist die Suche nach Geodaten, die Anzeige von Metadaten zu einzelnen Datensätzen und die Möglichkeit, Daten herunterzuladen. Der Katalog enthält auch Informationen über die Organisationen, die die Daten zur Verfügung stellen.
+Die Daten jeder Karte können direkt im Browser geöffnet werden, um einen Überblick über die Karte zu erhalten. Die Datenbeschreibung einer Karte enthält eine kurze Zusammenfassung des Inhalts und die für die Verlinkung notwendigen URLs.
 
+![](Single_Learning_Element/Img/Geodatenkatalog_Deutschland.png)
 
 
 
