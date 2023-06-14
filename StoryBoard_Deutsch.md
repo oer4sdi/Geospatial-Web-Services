@@ -193,9 +193,9 @@ Das Geoportal Deutschland bietet ebenfalls Geodaten von Deutschland an, allerdin
 Es wird vom Bundesamt für Kartographie und Geodäsie (BKG) betrieben und dient als Zugangspunkt zu Geodaten verschiedener Behörden und Organisationen.
 
 Nutzerinnen und Nutzer können nach bestimmten Geodaten suchen, z.B. nach Orten, Themen, Datentypen und vielem mehr.
-![](Single_Learning_Element/Img/Geoportal.png)
+![](Single_Learning_Element/Img/Geoportal-min.png)
 Das Geoportal ermöglicht die direkte Anzeige der Geodaten sowie die Interaktion und Bearbeitung der Karten. Über das Ausrufezeichensymbol ist es möglich, Informationen zu den Karten zu erhalten und die URL der Karte abzurufen.
-![](Single_Learning_Element/Img/Geoportal_2.png)
+![](Single_Learning_Element/Img/Geoportal_2-min.png)
 Das Geoportal unterstützt somit den Zugriff auf Geodaten über verschiedene Standards und Protokolle wie WMS und WFS.
 
 
