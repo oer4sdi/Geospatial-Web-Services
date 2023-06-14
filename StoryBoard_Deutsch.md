@@ -184,7 +184,7 @@ Die Hauptfunktion der Website ist die Suche nach Geodaten, die Anzeige von Metad
 Die Daten jeder Karte können direkt im Browser geöffnet werden, um einen Überblick über die Karte zu erhalten. Die Datenbeschreibung einer Karte enthält eine kurze Zusammenfassung des Inhalts und die für die Verlinkung notwendigen URLs.
 
 ![](Single_Learning_Element/Img/Geodatenkatalog_Deutschland.png)
-<img src="Geodatenkatalog_Deutschland.png" alt="" width="50%" height="50%">
+
 
 
 Geoportal Deutschland
