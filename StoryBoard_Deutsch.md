@@ -184,6 +184,7 @@ Die Hauptfunktion der Website ist die Suche nach Geodaten, die Anzeige von Metad
 Die Daten jeder Karte können direkt im Browser geöffnet werden, um einen Überblick über die Karte zu erhalten. Die Datenbeschreibung einer Karte enthält eine kurze Zusammenfassung des Inhalts und die für die Verlinkung notwendigen URLs.
 
 ![](Single_Learning_Element/Img/Geodatenkatalog_Deutschland.png)
+<img src="Geodatenkatalog_Deutschland.png" alt="" width="50%" height="50%">
 
 
 Geoportal Deutschland
@@ -195,7 +196,7 @@ Es wird vom Bundesamt für Kartographie und Geodäsie (BKG) betrieben und dient 
 Nutzerinnen und Nutzer können nach bestimmten Geodaten suchen, z.B. nach Orten, Themen, Datentypen und vielem mehr.
 ![](Single_Learning_Element/Img/Geoportal.png)
 Das Geoportal ermöglicht die direkte Anzeige der Geodaten sowie die Interaktion und Bearbeitung der Karten. Über das Ausrufezeichensymbol ist es möglich, Informationen zu den Karten zu erhalten und die URL der Karte abzurufen.
-![](Single_Learning_Element/Img/Geoportal_2-min.png)
+![](Single_Learning_Element/Img/Geoportal_2.png)
 Das Geoportal unterstützt somit den Zugriff auf Geodaten über verschiedene Standards und Protokolle wie WMS und WFS.
 
 
