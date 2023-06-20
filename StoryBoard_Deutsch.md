@@ -201,6 +201,34 @@ Das Geoportal unterstützt somit den Zugriff auf Geodaten über verschiedene Sta
 
 
 
+Einbindung von einem WMS und WFS-Server in QGIS
+
+WMS von basemap.de ist eine [Farbige Basiskarte](https://basemap.de/dienste/wms_capabilities_web_raster.xml)
+WFS vom Geodatenzentrum mit den [Deutschen Verwaltungsgrenzen](https://sgx.geodatenzentrum.de/wfs_vg2500)
+
+Anleitung zum Einbinden der Services in QGIS
+
+* Neues Projekt erstellen
+* Open Street MAps installieren (falls nicht vorhanden)
+* WMS- und WFS-Layer hinzufügen
+	--> Linksklick auf "Layer" --> "Layer hinzufügen" --> "WMS/WMTS-Layer hinzufügen" oder "WFS-Layer hinzufügen" --> den Button "Neu" anklicken und einen Namen für den Layer festlegen und die URL des Layers einfügen --> "OK" drücken und mit "Schließen" den Vorgang abschließen
+Diesen Vorgang einmal für den WMS-Layer und einmal für den WFS-Layer durchführen.
+* Im Browser zuerst bei "WMS Test" die Pfeile zum aufklappen drücken und "basemap.de Web Raster Farbe" in die Karte ziehen
+  Danach bei "WFS Test" den Layer "Bundesland" in die Karte ziehen
+* In das Fenster Layer wechseln und mit einem Rechtsklick auf den Layer "Bundesland" und einem weiteren auf "Attributtabelle" lassen sich Eigenschaften des WFS-Layers anzeigen --> über einen Klick auf "Eigenschaften" können Veränderungen in dem Layer vorgenommen werden, wie zum Beispiel an der Symbolisierung des Layers
+
+![] (Single_Learning_Element/Img/QGIS/QGIS_Anleitung.png)
+
+Unterschiede zwischen WMS- und WFS-Layern
+
+* WMS-Layer sind nur für die Darstellung von statischen Kartenbildern da
+* WFS-Layer sind in der Lage aktualisierte Daten bereit- und darzustellen, zudem ist es möglich Veränderungen in der Darstellung des Layers vorzunehmen
+
+
+Zusammenfassend lässt sich sagen, dass die Verwendung von WMS- und WFS-Services in QGIS eine leistungsstarke Möglichkeit bietet, Geodaten anzuzeigen, zu analysieren und zu modifizieren. Ein WMS-Service ermöglicht eine schnelle und einfache Darstellung von Karten, während ein WFS-Service detaillierte Informationen über Geodaten liefert, die bearbeitet und analysiert werden können, um neue Erkenntnisse zu gewinnen.
+
+
+
 ### 3.2 Übung 2
 **Benötigte Softwarekomponenten, die in dieser Übung verwendet werden:** 
 
