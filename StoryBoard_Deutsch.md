@@ -275,13 +275,13 @@ Als nächstes wird die Seite http://localhost:8080/geoserver im Webbrowser geöf
 
 Einen Überblick über das Interface erhalten
 
-Arbeitsbereiche --> Container für Ressourcen, wie Layer, Stile und Datenspeicher --> wird benutzt um verschiedene Projekte innerhalb einer Geoserverinstallation zu organisieren
+* Arbeitsbereiche --> Container für Ressourcen, wie Layer, Stile und Datenspeicher --> wird benutzt um verschiedene Projekte innerhalb einer Geoserverinstallation zu organisieren
 
-Datenspeicher --> Schnittstelle zu einer bestimmten Art von Geodatenquelle
+* Datenspeicher --> Schnittstelle zu einer bestimmten Art von Geodatenquelle
 
-Layer --> Repräsentiert einen bestimmten Geodatensatz der über Webservices abgerufen werden kann
+* Layer --> Repräsentiert einen bestimmten Geodatensatz der über Webservices abgerufen werden kann
 
-Stile --> beschreiben die Darstellung in dem die passenden Symbolisierungen den einzelnen Layern zugeordnet werden
+* Stile --> beschreiben die Darstellung in dem die passenden Symbolisierungen den einzelnen Layern zugeordnet werden
 
 Die von GeoServer voreingestellten Arbeitsbereiche sind für diese Übung nicht von Interesse, da es sich um Beispielsätze handelt. Sie können zur besseren Übersicht gelöscht werden. Das Löschen eines Arbeitsbereiches löscht direkt alle damit verbundenen Layer und Datenspeicher, nur die Stile bleiben erhalten.
 
