@@ -265,7 +265,41 @@ docker run -it -p 80:8080 docker.osgeo.org/geoserver:2.22.0
 
 Öffne über http://localhost:8080/geoserver die Weboberfläche von GeoServer in deinem Standardbrowser. 
 
+**Erstellen von WMS- und WFS-Services in Docker**
 
+Zuerst muss die Docker Desktop Anwendung installiert werden. Sobald die Software von docker.com erfolgreich installiert wurde und die Desktop-Version gestartet werden kann, kann mit der Erstellung des GeoServers begonnen werden.
+
+Zuerst muss GeoServer über Docker gestartet werden, indem der Befehl „docker pull docker.osgeo.org/geoserver:2.22.0“ in die Kommandozeile des Computers eingegeben wird, z.B. cmd für Windows-Systeme. Wenn dieser Vorgang abgeschlossen ist, kann der Befehl „docker run -it -p 8080:8080 docker.osgeo.org/geoserver:2.22.0“ eingegeben werden, um GeoServer auszuführen. Dieser Befehl startet GeoServer innerhalb eines Docker-Containers, in diesem Fall auf dem Port „8080“. Sollte dieser Port bereits belegt sein, kann die Nummer einfach geändert werden.
+
+Als nächstes wird die Seite http://localhost:8080/geoserver im Webbrowser geöffnet, um auf die Startseite des GeoServers zu gelangen. Um vollen Zugriff auf die Seite des GeoServers zu erhalten, muss man sich auf der Seite mit den Zugangsdaten „admin“ und dem Passwort „geoserver“ anmelden. Nun sehen Sie die Startseite des GeoServer Web Interface.
+
+Einen Überblick über das Interface erhalten
+
+Arbeitsbereiche --> Container für Ressourcen, wie Layer, Stile und Datenspeicher --> wird benutzt um verschiedene Projekte innerhalb einer Geoserverinstallation zu organisieren
+
+Datenspeicher --> Schnittstelle zu einer bestimmten Art von Geodatenquelle
+
+Layer --> Repräsentiert einen bestimmten Geodatensatz der über Webservices abgerufen werden kann
+
+Stile --> beschreiben die Darstellung in dem die passenden Symbolisierungen den einzelnen Layern zugeordnet werden
+
+Die von GeoServer voreingestellten Arbeitsbereiche sind für diese Übung nicht von Interesse, da es sich um Beispielsätze handelt. Sie können zur besseren Übersicht gelöscht werden. Das Löschen eines Arbeitsbereiches löscht direkt alle damit verbundenen Layer und Datenspeicher, nur die Stile bleiben erhalten.
+
+Nach erfolgreichem Löschen kann ein neuer Arbeitsbereich angelegt werden. Dazu klickt man auf „Neuen Arbeitsbereich anlegen“ und gibt diesem einen Namen und eine URI. In diesem Fall „New York“ Undals URI http://www.NewYork.com. Diese URI kann fiktiv sein, muss aber der Schreibweise einer Webadresse entsprechen.
+
+Wenn dieser Arbeitsbereich gespeichert ist, wird er angeklickt und anschließend müssen im Bereich Services die Kontrollkästchen „WFS“ und „WMS“ aktiviert werden.
+
+Danach wird ein neuer Datenspeicher im Bereich Datenspeicher hinzugefügt. Hier werden Verknüpfungen für die Datentypen erstellt, damit GeoServer auf die Quellen zugreifen kann. In diesem Beispiel arbeiten wir nur mit Shapefiles und klicken auf „Directory of spatial files (shapefiles)“, um alle Shapefiles in einem Ordner zu verknüpfen. Der Arbeitsbereich New York wird ausgewählt und der Name der Datenquelle auf „Citydata“ gesetzt. Bei den Verknüpfungsparametern wird über „Durchsuchen“ --> data/ --> nyc/ der Ordner mit den bereitgestellten Datensätzen verknüpft. Mit „Speichern“ werden die neuen Layer angezeigt.
+
+In diesem Fenster können verschiedene Datensätze eingesehen und publiziert werden. In unserem Fall wird der Layer „poly_Landworks“ publiziert. Im neuen Fenster geben wir dem Layer den Namen „Manhattan_Landmarks“. Danach muss das Koordinatenreferenzsystem korrekt eingestellt werden und das Begrenzungsrechteck berechnet werden, indem auf „Aus den Daten berechnen“ und „Aus den nativen Grenzen berechnen“ geklickt wird. Anschließend muss gespeichert werden.
+
+In der Layer-Vorschau kann über „Open Layers“ der veröffentlichte Layer angezeigt werden. Da dieser noch einfarbig ist und keine Unterschiede erkennen lässt, können dem Layer entsprechende Stile hinzugefügt werden.
+
+Im Bereich Stile kann entweder ein eigener Stil erstellt oder ein bereits erstellter Stil verwendet werden. Wir verwenden den bereits angelegten Stil „polylandmarks“ und navigieren auf den Reiter Publishing und klicken das Kästchen „Default“ an und speichern. Nun hat sich in der Layer-Vorschau schon einiges getan. Um den Layer zu vervollständigen, müssen noch der Punktdatensatz „poi“ und der Liniendatensatz „tiger_roads“ wie zuvor der Stil publiziert werden. Die entsprechenden Symbolisierungen in den Stilen sind „poi“ und „simple_roads“.
+
+Nachdem diese Schritte durchgeführt wurden, sind eigene Dienste erfolgreich erstellt worden. Diese können nun in QGIS integriert werden. Dazu sind die gleichen Schritte wie in Übung 1 notwendig. Die URL findet man, indem man auf das GeoServer-Logo klickt, wodurch man wieder auf die Startseite gelangt. Über „WMS 1.3.0“ gelangt man zu den WMS-Layern und über „WFS 2.0.0“ zu den WFS-Layern.
+
+Nach der Integration der Layer in QGIS ist die Übung erfolgreich abgeschlossen.
 
 ## 4. Quiz
 
