@@ -1,4 +1,4 @@
-# OER zu Geospatial Web Services (in Arbeit!)          
+# OER zu Geospatial Web Services        
 
 Dieses Repository enthält alle Materialien, die zur Erstellung und Veröffentlichung einer Open Educational Resource (OER) zu Geospatial Web Services benötigt werden. Das OER-Modul bietet a) einige Hintergrundinformationen zu Geospatial Web Services und b) eine technische Anleitung zur Nutzung von Geospatial Web Services in einem Open Source Gis (QGIS) sowie einem Open Source Server (GeoServer). 
 
