@@ -22,7 +22,7 @@ In dieser Open Educational Resource (OER) lernst du, welche Formen von **Geospat
 
 Dieses Tutorial richtet sich hauptsächlich an Teilnehmer, die in etwa ... Minuten ihre Fähigkeiten zur Integration von Daten aus Geospatial Web Services verbessern wollen. Du solltest bestenfalls einige Grundkenntnisse im Umgang mit GIS-Software besitzen.
 
-Dieses Tutorial wurde am Institut für Geodäsie der Fachhochschule Bochum in enger Zusammenarbeit mit der Universität Münster und der Universität Bochum entwickelt. Hauptautor ist Fabian Przybylak unter der Leitung von Prof. Dr. Carsten Keßler.
+Dieses Tutorial wurde am Institut für Geodäsie der Fachhochschule Bochum in enger Zusammenarbeit mit der Universität Münster und der Universität Bochum entwickelt. Hauptautor ist Fabian Przybylak unter der Leitung von Prof. Dr. Carsten Keßler und in Zusammenarbeit mit Lucas Rudnik.
 
 Du darfst das OER (H5P-Inhalte) unter den Bedingungen der CC-BY-SA 4.0-Lizenz frei verwenden, verändern und vervielfältigen. Jeglicher Code, der mit dem OER zur Verfügung gestellt wird, kann unter den Bedingungen der MIT-Lizenz verwendet werden. Bitte lesen Sie die [vollständigen Lizenzbedingungen](/LICENSE.md). 
 
