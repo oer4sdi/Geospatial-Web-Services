@@ -275,7 +275,7 @@ Als nächstes wird die Seite http://localhost:8080/geoserver im Webbrowser geöf
 
 Einen Überblick über das Interface erhalten
 
-* Arbeitsbereiche --> Container für Ressourcen, wie Layer, Stile und Datenspeicher --> wird benutzt um verschiedene Projekte innerhalb einer Geoserverinstallation zu organisieren
+* Arbeitsbereiche --+> Container für Ressourcen, wie Layer, Stile und Datenspeicher --> wird benutzt um verschiedene Projekte innerhalb einer Geoserverinstallation zu organisieren
 
 * Datenspeicher --> Schnittstelle zu einer bestimmten Art von Geodatenquelle
 
