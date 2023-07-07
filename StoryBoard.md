@@ -251,25 +251,24 @@ Stelle sicher, dass du Docker Desktop bereits auf deinem System installiert hast
 Falls du dich noch tiefer mit dem Thema beschäftigen willst, dann findest du weitere Tutorials in der [offiziellen Dokumentation](https://docs.geoserver.org/) von GeoServer. 
 
 **Skript zum Videoguide**
-
-Starte Docker und eine Konsole (CMD) oder ein Terminal und führe die folgenden Befehle aus um GeoServer zu Downloaden:
-
-```shell
-docker pull docker.osgeo.org/geoserver:2.22.0
-```
-und als Container auszuführen:  
-
-```shell
-docker run -it -p 80:8080 docker.osgeo.org/geoserver:2.22.0
-```
-
-Öffne über http://localhost:8080/geoserver die Weboberfläche von GeoServer in deinem Standardbrowser. 
-
 **Erstellen von WMS- und WFS-Services in Docker**
 
 Zuerst muss die Docker Desktop Anwendung installiert werden. Sobald die Software von docker.com erfolgreich installiert wurde und die Desktop-Version gestartet werden kann, kann mit der Erstellung des GeoServers begonnen werden.
 
-Zuerst muss GeoServer über Docker gestartet werden, indem der Befehl „docker pull docker.osgeo.org/geoserver:2.22.0“ in die Kommandozeile des Computers eingegeben wird, z.B. cmd für Windows-Systeme. Wenn dieser Vorgang abgeschlossen ist, kann der Befehl „docker run -it -p 8080:8080 docker.osgeo.org/geoserver:2.22.0“ eingegeben werden, um GeoServer auszuführen. Dieser Befehl startet GeoServer innerhalb eines Docker-Containers, in diesem Fall auf dem Port „8080“. Sollte dieser Port bereits belegt sein, kann die Nummer einfach geändert werden.
+Zuerst muss GeoServer über Docker gestartet werden, indem der Befehl
+
+```shell
+docker pull docker.osgeo.org/geoserver:2.22.0
+```
+
+in die Kommandozeile des Computers eingegeben wird, z.B. cmd für Windows-Systeme. Wenn dieser Vorgang abgeschlossen ist, kann der Befehl 
+
+
+```shell
+docker run -it -p 8080:8080 docker.osgeo.org/geoserver:2.22.0
+```
+
+eingegeben werden, um GeoServer auszuführen. Dieser Befehl startet GeoServer innerhalb eines Docker-Containers, in diesem Fall auf dem Port „8080“. Sollte dieser Port bereits belegt sein, kann die Nummer einfach geändert werden.
 
 Als nächstes wird die Seite http://localhost:8080/geoserver im Webbrowser geöffnet, um auf die Startseite des GeoServers zu gelangen. Um vollen Zugriff auf die Seite des GeoServers zu erhalten, muss man sich auf der Seite mit den Zugangsdaten „admin“ und dem Passwort „geoserver“ anmelden. Nun sehen Sie die Startseite des GeoServer Web Interface.
 
