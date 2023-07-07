@@ -260,7 +260,7 @@ docker pull docker.osgeo.org/geoserver:2.22.0
 und als Container auszuführen:  
 
 ```shell
-docker run -it -p 80:8080 docker.osgeo.org/geoserver:2.22.0
+docker run -it -p 8080:8080 docker.osgeo.org/geoserver:2.22.0
 ```
 
 Öffne über http://localhost:8080/geoserver die Weboberfläche von GeoServer in deinem Standardbrowser. 
