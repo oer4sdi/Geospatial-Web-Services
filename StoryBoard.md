@@ -270,7 +270,7 @@ docker run -it -p 8080:8080 docker.osgeo.org/geoserver:2.22.0
 
 eingegeben werden, um GeoServer auszuführen. Dieser Befehl startet GeoServer innerhalb eines Docker-Containers, in diesem Fall auf dem Port „8080“. Sollte dieser Port bereits belegt sein, kann die Nummer einfach geändert werden.
 
-Als nächstes wird die Seite http://localhost:8080/geoserver im Webbrowser geöffnet, um auf die Startseite des GeoServers zu gelangen. Um vollen Zugriff auf die Seite des GeoServers zu erhalten, muss man sich auf der Seite mit den Zugangsdaten „admin“ und dem Passwort „geoserver“ anmelden. Nun sehen Sie die Startseite des GeoServer Web Interface.
+Als nächstes wird die Seite http://localhost:8080/geoserver im Webbrowser geöffnet, um auf die Startseite des GeoServers zu gelangen. Um vollen Zugriff auf die Seite des GeoServers zu erhalten, muss man sich auf der Seite mit den Zugangsdaten „admin“ und dem Passwort „geoserver“ anmelden. Nun siehst du die Startseite des GeoServer Web Interface.
 
 Einen Überblick über das Interface erhalten
 
@@ -282,7 +282,7 @@ Einen Überblick über das Interface erhalten
 
 * Stile --> beschreiben die Darstellung in dem die passenden Symbolisierungen den einzelnen Layern zugeordnet werden
 
-Die von GeoServer voreingestellten Arbeitsbereiche sind für diese Übung nicht von Interesse, da es sich um Beispielsätze handelt. Sie können zur besseren Übersicht gelöscht werden. Das Löschen eines Arbeitsbereiches löscht direkt alle damit verbundenen Layer und Datenspeicher, nur die Stile bleiben erhalten.
+Die von GeoServer voreingestellten Arbeitsbereiche sind für diese Übung nicht von Interesse, da es sich um Beispielsätze handelt. Diese können zur besseren Übersicht gelöscht werden. Das Löschen eines Arbeitsbereiches löscht direkt alle damit verbundenen Layer und Datenspeicher, nur die Stile bleiben erhalten.
 
 Nach erfolgreichem Löschen kann ein neuer Arbeitsbereich angelegt werden. Dazu klickt man auf „Neuen Arbeitsbereich anlegen“ und gibt diesem einen Namen und eine URI. In diesem Fall „New York“ Undals URI http://www.NewYork.com. Diese URI kann fiktiv sein, muss aber der Schreibweise einer Webadresse entsprechen.
 
@@ -301,6 +301,26 @@ Nachdem diese Schritte durchgeführt wurden, sind eigene Dienste erfolgreich ers
 Nach der Integration der Layer in QGIS ist die Übung erfolgreich abgeschlossen.
 
 ## 4. Quiz
+
+**Fragen**
+
+Welche Anfragen können an einen WMS-Server gestellt werden?
+
+Wofür steht die Abkürzung "OGC"?
+
+Was sind Geospatial Web Services?
+
+Welcher Service ermöglicht den Zugriff, sowie die Abfrage von vektorbasierten Geodaten?
+
+Welche vier Komponenten in der OGC Web Service-Architektur sind die wichtigsten?
+
+Wann und wo wurde das Open Geospacial Consortium (OGC) gegründet?
+
+Von wem wurde GeoServer über die Jahre weiterentwickelt?
+
+Welche Funktionen hat Geoserver?
+
+Zwei Zuordnungsfragen zu WMS-Server Anfragen und WFS-Server Anfragen
 
 
 ## 5. Zusammenfassung
