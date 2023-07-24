@@ -325,12 +325,12 @@ Zwei Zuordnungsfragen zu WMS-Server Anfragen und WFS-Server Anfragen
 
 ## 5. Zusammenfassung
 
-Hey! Das hast du gut gemacht! Wir hoffen, dass Sie nun eine Vorstellung davon haben, wie Sie mit Geospatial Web Services wie WMS und WMF Services in Ihrem GIS arbeiten und wie Sie Ihre eigenen Web Services über Geoserver einrichten können.  
+Hey! Das hast du gut gemacht! Wir hoffen, dass du nun eine Vorstellung davon hast, wie du mit Geospatial Web Services wie WMS und WMF Services in deinem GIS arbeiten und wie du deine eigenen Web Services über Geoserver einrichten kannst.  
 
 
 **Interessiert daran, mehr zu lernen?**
 
-Im Internet finden Sie eine Fülle von Ressourcen zu Geospatial Web Services. Hier sind einige Empfehlungen: 
+Im Internet findest du eine Fülle von Ressourcen zu Geospatial Web Services. Hier sind einige Empfehlungen: 
 
 * [Zhao, P., & Di, L. (Eds.). (2010). Geospatial Web Services: Advances in information interoperability: Fortschritte bei der Interoperabilität von Informationen. IGI Global.](https://www.igi-global.com/book/geospatial-web-services/46010) 
 * [Kralidis, A. T. (2007). Geospatial Web Services (Geodaten-Webdienste): The evolution of geospatial data infrastructure. In The Geospatial Web (S. 223-228). Springer, London.](https://link.springer.com/chapter/10.1007/978-1-84628-827-2_22) 
@@ -341,6 +341,6 @@ Im Internet finden Sie eine Fülle von Ressourcen zu Geospatial Web Services. Hi
 * [Link zu Geospatial Web Services](https://gis4schools.readthedocs.io/en/latest/part2/2_1.html)
 
 
-**Ihr Feedback ist willkommen!**
+**Dein Feedback ist willkommen!**
 
-Wenn Sie Defizite in diesem OER-Modul festgestellt haben oder Ideen zur Verbesserung des OER-Materials haben, sind Sie herzlich eingeladen, Einträge in die Issue-Liste im [Github repository dieses OERs](https://github.com/oer4sdi/Geospatial-Web-Services).
+Wenn DU Defizite in diesem OER-Modul festgestellt hast oder Ideen zur Verbesserung des OER-Materials hast, bist du herzlich eingeladen, Einträge in die Issue-Liste im [Github repository dieses OERs](https://github.com/oer4sdi/Geospatial-Web-Services).
