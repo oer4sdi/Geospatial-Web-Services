@@ -304,23 +304,23 @@ Nach der Integration der Layer in QGIS ist die Übung erfolgreich abgeschlossen.
 
 **Fragen**
 
-Welche Anfragen können an einen WMS-Server gestellt werden?
+* Welche Anfragen können an einen WMS-Server gestellt werden?
 
-Wofür steht die Abkürzung "OGC"?
+* Wofür steht die Abkürzung "OGC"?
 
-Was sind Geospatial Web Services?
+* Was sind Geospatial Web Services?
 
-Welcher Service ermöglicht den Zugriff, sowie die Abfrage von vektorbasierten Geodaten?
+* Welcher Service ermöglicht den Zugriff, sowie die Abfrage von vektorbasierten Geodaten?
 
-Welche vier Komponenten in der OGC Web Service-Architektur sind die wichtigsten?
+* Welche vier Komponenten in der OGC Web Service-Architektur sind die wichtigsten?
 
-Wann und wo wurde das Open Geospacial Consortium (OGC) gegründet?
+* Wann und wo wurde das Open Geospacial Consortium (OGC) gegründet?
 
-Von wem wurde GeoServer über die Jahre weiterentwickelt?
+* Von wem wurde GeoServer über die Jahre weiterentwickelt?
 
-Welche Funktionen hat Geoserver?
+* Welche Funktionen hat Geoserver?
 
-Zwei Zuordnungsfragen zu WMS-Server Anfragen und WFS-Server Anfragen
+* Zwei Zuordnungsfragen zu WMS-Server Anfragen und WFS-Server Anfragen
 
 
 ## 5. Zusammenfassung
