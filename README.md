@@ -24,7 +24,7 @@ Lade dir einfach nur die H5P-Datei herunter, lade sie in eine der Umgebungen hoc
 
 ###Schneller Überblick über den Inhalt
 
-Wenn du dir zunächst einen schnellen Überblick über die konkreten Inhalte des H5P-Moduls verschaffen willst, findest du im [Storyboard](/StoryBoard_Deutsch.md) ein nach dem H5P-Modul strukturiertes Skript mit integrierten Illustrationen. 
+Wenn du dir zunächst einen schnellen Überblick über die konkreten Inhalte des H5P-Moduls verschaffen willst, findest du im [Storyboard](/StoryBoard.md) ein nach dem H5P-Modul strukturiertes Skript mit integrierten Illustrationen. 
 
 ### Copyright und Lizenzerklärung
 
